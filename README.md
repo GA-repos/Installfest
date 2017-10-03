@@ -6,4 +6,4 @@ If at any point you are unsure of whether you have done something correctly, ask
 
 ## Setup
 
-[Github](github.md)
+[Github and Initial Setup](github.md)
