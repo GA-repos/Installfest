@@ -3,6 +3,7 @@
 ## Git
 
 Run the command below in your terminal.
+**This script should be run from the root of this installfest repository.**
 
 ```bash
   scripts/git.sh
@@ -25,6 +26,7 @@ The script will prompt you for some information
   Enter passphrase (empty for no passphrase):
   ```
   - press `Enter` without typing anything to use no passphrase (recommended)
+  - press `Enter` again, without typing anything, when prompted to `Enter same passphrase again`
 
   (Feel free to select a non-default location or put in a password for your keys when prompted,
 but it's not necessary to do so)

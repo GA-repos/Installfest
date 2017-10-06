@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+
+if grep -Fq "function parse_git_branch" ~/.bashrc
+then
+  echo 'Git preferences for bash already added to ~/.bashrc'
+else
+
 cat <<'EOF' >> ~/.bashrc
 
 # Git
@@ -12,11 +18,13 @@ export VISUAL='atom --wait'
 
 EOF
 
-echo "\nWhat is your GitHub username?"
+fi
+
+echo -e "\nWhat is your GitHub username?"
 read username
 git config --global user.name "$username"
 
-echo "\nWhat is your GitHub email address?"
+echo -e "\nWhat is your GitHub email address?"
 read email
 git config --global user.email "$email"
 
@@ -42,6 +50,6 @@ else
   xclip -selection clipboard < ~/.ssh/id_rsa.pub
 fi
 
-read -p "Key copied to clipboard. Paste in settings on Github. Press [ENTER] to continue and test key."
+read -p "Key copied to clipboard. Log in and go to settings on Github. Follow these next steps outlined in Installfest doc, then press [ENTER] to continue."
 
 ssh -T git@github.com
