@@ -13,3 +13,5 @@ If at any point you are unsure of whether you have done something correctly, ask
 [Bash Configuration (macOS only)](bash.md)
 
 [Command Line Tools - Xcode (macOS only)](command_line_tools.md)
+
+[Homebrew](homebrew.md)
