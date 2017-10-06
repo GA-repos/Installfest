@@ -12,16 +12,15 @@ export VISUAL='atom --wait'
 
 EOF
 
-git config --global color.ui true
-
-echo -e "\n What is your Github username?"
+echo "\nWhat is your GitHub username?"
 read username
 git config --global user.name "$username"
 
-echo -e "\n What is your Github email address?"
+echo "\nWhat is your GitHub email address?"
 read email
 git config --global user.email "$email"
 
+git config --global color.ui true
 git config --global pull.rebase true
 git config --global branch.autosetuprebase always
 git config --global push.default simple
