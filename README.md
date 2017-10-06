@@ -7,4 +7,7 @@ If at any point you are unsure of whether you have done something correctly, ask
 ## Setup
 
 [Github and Initial Setup](github.md)
+
 [Git](git.md)
+
+[bash Configuration (macOS only)](bash.md)
