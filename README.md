@@ -10,4 +10,4 @@ If at any point you are unsure of whether you have done something correctly, ask
 
 [Git](git.md)
 
-[bash Configuration (macOS only)](bash.md)
+[Bash Configuration (macOS only)](bash.md)

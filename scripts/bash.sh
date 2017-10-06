@@ -15,5 +15,3 @@ if [[ $(uname -s) = 'Darwin' ]]; then
   fi
 
 fi
-
-cat /etc/paths
