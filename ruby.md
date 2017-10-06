@@ -10,5 +10,5 @@ Then, the script will install the latest version of Ruby.
 In your terminal, run:
 
 ```
-scripts/rbenv.sh
+scripts/ruby.sh
 ```
