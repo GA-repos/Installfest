@@ -18,6 +18,8 @@ If at any point you are unsure of whether you have done something correctly, ask
 
 [Node](node.md)
 
+[Ruby](ruby.md)
+
 [Atom](atom.md)
 
 [Chrome](chrome.md)
