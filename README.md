@@ -17,3 +17,5 @@ If at any point you are unsure of whether you have done something correctly, ask
 [Homebrew](homebrew.md)
 
 [Node](node.md)
+
+[Atom](atom.md)
