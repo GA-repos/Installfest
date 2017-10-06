@@ -14,12 +14,19 @@ fi
 
 brew install rbenv
 
+if grep -Fq "which rbenv > /dev/null" ~/.bashrc
+then
+  echo -e '\nAll set! rbenv setup already added to ~/.bashrc\n'
+else
+
 cat <<'EOF' >> ~/.bashrc
 # Rbenv
 if which rbenv > /dev/null; then
    eval "$(rbenv init -)"
 fi
 EOF
+
+fi
 
 eval "$(rbenv init -)"
 
