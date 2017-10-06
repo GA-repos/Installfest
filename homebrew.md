@@ -8,17 +8,19 @@
   into your terminal.
 
     ```bash
-    scripts/homebrew.sh
+  scripts/homebrew.sh
     ```
 
-**NOTE: YOUR SYSTEM WILL PROBABLY THROW SOME ERRORS HERE!** Some of these
-errors are probably minor, but some might not be; please wait until one of the
+**NOTE: YOUR SYSTEM WILL PROBABLY THROW SOME ERRORS HERE!**
+
+Most of these
+errors are probably minor, but some might not be. Please wait until one of the
 consultants has given you the go-ahead before moving on.
 
--   After resolving errors, enter:
+-   After resolving errors, in your terminal, run:
 
 ```bash
-  brew doctor
+brew doctor
 ```
 
 -   Once Homebrew says `Your system is ready to brew`, run the following command
