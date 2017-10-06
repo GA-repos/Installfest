@@ -3,13 +3,17 @@ if [[ $# -eq 0 ]] ; then
   brew install nvm
   mkdir -p ~/.nvm
 
+  if grep -Fq "export NVM_DIR=~/.nvm" ~/.bashrc
+  then
+    echo -e '\nAll set! ENV var for NVM_DIR already set in ~/.bashrc'
+  else
 cat <<'EOF' >> ~/.bashrc
 
 export NVM_DIR=~/.nvm
 . $(brew --prefix nvm)/nvm.sh
 
 EOF
-
+  fi
 fi
 
 if [[ $1 = "node" ]]; then
