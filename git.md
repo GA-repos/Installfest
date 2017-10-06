@@ -5,7 +5,7 @@
 Run the command below in your terminal.
 
 ```bash
-  sh scripts/git.sh
+  scripts/git.sh
 ```
 
 The script will prompt you for some information
