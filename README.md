@@ -13,5 +13,6 @@ Setup | Description
 [Homebrew](homebrew.md) | Install Homebrew package manager
 [Node](node.md) | Install nvm, Node, and global npm packages
 [Ruby](ruby.md) | Install rbenv and Ruby
+[PostgreSQL](postgres.md) | Install PostgreSQL
 [Atom](atom.md) | Install Atom and required plugins
 [Chrome](chrome.md) | Install Chrome and configure settings
