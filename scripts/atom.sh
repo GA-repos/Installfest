@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 if which apm; then
-  apm install aligner aligner-scss aligner-css aligner-ruby atom-beautify \
+  apm install aligner aligner-scss aligner-css aligner-javascript aligner-ruby atom-beautify \
   editorconfig linter-ui-default busy-signal esformatter fixmyjs git-diff-details git-history \
   git-plus language-markdown less-than-slash linter linter-csslint linter-eslint \
   linter-markdown linter-rubocop linter-ruby linter-tidy \
