@@ -9,7 +9,7 @@ Enter the following command in your terminal
 scripts/postgres.sh
 ```
 
-- To ensure Postgres is running on your computer, type
+-   To ensure Postgres is running on your computer, type
 ```
 brew services list
 ```
