@@ -4,7 +4,12 @@
 - [x] [Git](git.md)
 - [x] [Bash Configuration (macOS only)](bash.md)
 - [x] [Command Line Tools - Xcode (macOS only)](command_line_tools.md)
-- [x] [Hombrew](homebrew.md)
+- [x] [Homebrew](homebrew.md)
+- [ ] [Node](node.md)
+- [ ] [Ruby](ruby.md)
+- [ ] [PostgreSQL](postgres.md)
+- [ ] [Atom](atom.md)
+- [ ] [Chrome](chrome.md)
 
 ## Node
 

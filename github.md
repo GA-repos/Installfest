@@ -1,4 +1,16 @@
 # Installfest
+
+- [ ] [Github and Initial Setup](github.md)
+- [ ] [Git](git.md)
+- [ ] [Bash Configuration (macOS only)](bash.md)
+- [ ] [Command Line Tools - Xcode (macOS only)](command_line_tools.md)
+- [ ] [Homebrew](homebrew.md)
+- [ ] [Node](node.md)
+- [ ] [Ruby](ruby.md)
+- [ ] [PostgreSQL](postgres.md)
+- [ ] [Atom](atom.md)
+- [ ] [Chrome](chrome.md)
+
 ## GitHub and Initial Setup
 
 If you haven't done so already, go to [GitHub](http://www.github.com) and create
