@@ -53,6 +53,7 @@ but it's not necessary to do so)
   *Help! My SSH key is no longer copied to my clipboard* (select your OS then run the below command in terminal)
   <details>
   <summary>macOS</summary>
+
   `pbcopy < ~/.ssh/id_rsa.pub`
   </details>
 
@@ -84,18 +85,19 @@ but it's not necessary to do so)
 11.   Next, log into git.generalassemb.ly, go to [https://git.generalassemb.ly/settings/keys](https://git.generalassemb.ly/settings/keys),
     and paste in the same SSH key.
 
-    *Help! My SSH key is no longer copied to my clipboard* (select your OS then run the below command in terminal)
+  *Help! My SSH key is no longer copied to my clipboard* (select your OS then run the below command in terminal)
 
-    <details>
-    <summary>macOS</summary>
-    `pbcopy < ~/.ssh/id_rsa.pub`
-    </details>
+  <details>
+  <summary>macOS</summary>
+  
+  `pbcopy < ~/.ssh/id_rsa.pub`
+  </details>
 
-    <details>
-    <summary>Linux</summary>
+  <details>
+  <summary>Linux</summary>
 
-    `xclip -selection clipboard < ~/.ssh/id_rsa.pub`
-    </details>
+  `xclip -selection clipboard < ~/.ssh/id_rsa.pub`
+  </details>
 
 12.  In your terminal, paste in
 ```
