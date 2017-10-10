@@ -1,6 +1,6 @@
 # Installfest
 
-- [ ] [Github and Initial Setup](github.md)
+- [ ] **Github and Initial Setup**
 - [ ] [Git](git.md)
 - [ ] [Bash Configuration (macOS only)](bash.md)
 - [ ] [Command Line Tools - Xcode (macOS only)](command_line_tools.md)

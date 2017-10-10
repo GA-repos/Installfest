@@ -9,7 +9,7 @@
 - [x] [Ruby](ruby.md)
 - [x] [PostgreSQL](postgres.md)
 - [x] [Atom](atom.md)
-- [ ] [Chrome](chrome.md)
+- [ ] **Chrome**
 
 ## Chrome
 

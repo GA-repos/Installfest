@@ -7,7 +7,7 @@
 - [x] [Homebrew](homebrew.md)
 - [x] [Node](node.md)
 - [x] [Ruby](ruby.md)
-- [ ] [PostgreSQL](postgres.md)
+- [ ] **PostgreSQL**
 - [ ] [Atom](atom.md)
 - [ ] [Chrome](chrome.md)
 

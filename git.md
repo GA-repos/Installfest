@@ -1,7 +1,7 @@
 # Installfest
 
 - [x] [Github and Initial Setup](github.md)
-- [ ] [Git](git.md)
+- [ ] **Git**
 - [ ] [Bash Configuration (macOS only)](bash.md)
 - [ ] [Command Line Tools - Xcode (macOS only)](command_line_tools.md)
 - [ ] [Homebrew](homebrew.md)
@@ -89,7 +89,7 @@ but it's not necessary to do so)
 
   <details>
   <summary>macOS</summary>
-  
+
   `pbcopy < ~/.ssh/id_rsa.pub`
   </details>
 
