@@ -4,6 +4,8 @@ Follow these instructions to set up your laptop for work in WDI. If you've previ
 
 If at any point you are unsure of whether you have done something correctly, ask a consultant. It's important in many cases that we do these steps in order. In general, if you receive no output, the command has executed successfully. (No news is good news.) If you receive output in your terminal that you didn't expect, please notify a consultant.
 
+**The goal of this is not for you to fully understand everything that is being set up on your computer or what all of these tools do!** You should be focused on following along and completing the instructions. If you have any specific questions about anything you do today, we will be happy to answer after Installfest is complete. 
+
 Setup | Description
 --- | ---
 [Github and Initial Setup](github.md) | Set up accounts for GitHub & GitHub Enterprise. Fork and Clone this repository
