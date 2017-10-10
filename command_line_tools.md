@@ -24,3 +24,5 @@ If you see a message similar to the one below, you are all set to continue!
 ```
 xcode-select: error: command line tools are already installed, use "Software Update" to install updates
 ```
+
+[Continue With Installfest](homebrew.md)

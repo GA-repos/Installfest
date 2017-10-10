@@ -47,3 +47,5 @@ Then open the "Settings" panel for the autosave plugin.
 Lastly, ensure the "Enabled" option is checked.
 
 ![Autosave Settings](https://cloud.githubusercontent.com/assets/388761/21697838/47338b72-d362-11e6-9106-4a5f476945ca.png)
+
+[Continue With Installfest](chrome.md)

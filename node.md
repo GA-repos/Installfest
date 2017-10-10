@@ -37,3 +37,5 @@ modules and make them available across all of our projects.
 ```bash
 scripts/npm.sh
 ```
+
+[Continue With Installfest](ruby.md)

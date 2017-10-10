@@ -20,3 +20,5 @@ in the correct directory.
 -   Change into the newly created `installfest` directory by typing `cd installfest`. This directory contains another directory named `scripts/` containing scripts that we will run to set up our machines!
 
 -   We will be running scripts from the root of the `installfest` directory. This means at any time, your current working directory should be `~/installfest/`. Do not change into any other directories within `~/installfest/`
+
+[Continue With Installfest](git.md)

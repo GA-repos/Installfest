@@ -106,3 +106,5 @@ and press `[Enter]`.
   ```bash
   Hi <your_username>! You\'ve successfully authenticated, but GitHub does not provide shell access.
   ```
+
+  [Continue With Installfest](bash.md)

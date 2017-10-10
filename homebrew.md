@@ -28,3 +28,5 @@ brew doctor
 ```bash
 config/homebrew.sh update
 ```
+
+[Continue With Installfest](node.md)

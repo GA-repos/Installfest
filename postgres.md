@@ -34,3 +34,5 @@ Type "help" for help.
 ```
 
 Exit the psql terminal by typing `\q`, followed by `Enter`
+
+[Continue With Installfest](atom.md)

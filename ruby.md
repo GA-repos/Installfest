@@ -12,3 +12,5 @@ In your terminal, run:
 ```
 scripts/ruby.sh
 ```
+
+[Continue With Installfest](postgres.md)

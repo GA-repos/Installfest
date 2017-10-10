@@ -12,3 +12,5 @@ shell (`bash`) configuration.
 ```bash
   scripts/bash.sh
 ```
+
+[Continue With Installfest](command_line_tools.md)
