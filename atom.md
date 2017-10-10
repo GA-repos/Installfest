@@ -50,6 +50,8 @@ installed shell commands correctly. In the top menu, select `Atom -> Install She
 Part of being a good developer is using tools that help you make fewer mistakes.
 To that end, let's configure a useful feature in Atom: autosave! The script you just ran should have enabled this for you, but we will check in Atom just to be sure.
 
+**Note: Atom may prompt you to install additional packages when you open for the first time.** You should install these, as some packages we installed may depend on the ones Atom is prompting you to install.
+
 Once Atom is open, in the top menu, go to `Packages -> Settings View -> Manage Packages`, and search for autosave.
 Then open the "Settings" panel for the autosave plugin.
 
