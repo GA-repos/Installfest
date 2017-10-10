@@ -1,5 +1,15 @@
 # Installfest
 
+- [x] [Github and Initial Setup](github.md)
+- [x] [Git](git.md)
+- [x] [Bash Configuration (macOS only)](bash.md)
+- [x] [Command Line Tools - Xcode (macOS only)](command_line_tools.md)
+- [x] [Hombrew](homebrew.md)
+- [x] [Node](node.md)
+- [x] [Ruby](ruby.md)
+- [x] [PostgreSQL](postgres.md)
+- [x] [Atom](atom.md)
+
 ## Chrome
 
 If you do not already have Google Chrome, [download here](https://www.google.com/chrome/browser/desktop/index.html), install it, and set it as your

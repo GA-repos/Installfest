@@ -1,5 +1,12 @@
 # Installfest
 
+- [x] [Github and Initial Setup](github.md)
+- [x] [Git](git.md)
+- [x] [Bash Configuration (macOS only)](bash.md)
+- [x] [Command Line Tools - Xcode (macOS only)](command_line_tools.md)
+- [x] [Hombrew](homebrew.md)
+- [x] [Node](node.md)
+
 ## Ruby
 
 First, the script that we run will install a tool called [rbenv](https://github.com/rbenv/rbenv) that is used to manage multiple versions of Ruby, in case we want to switch

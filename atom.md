@@ -1,5 +1,14 @@
 # Installfest
 
+- [x] [Github and Initial Setup](github.md)
+- [x] [Git](git.md)
+- [x] [Bash Configuration (macOS only)](bash.md)
+- [x] [Command Line Tools - Xcode (macOS only)](command_line_tools.md)
+- [x] [Hombrew](homebrew.md)
+- [x] [Node](node.md)
+- [x] [Ruby](ruby.md)
+- [x] [PostgreSQL](postgres.md)
+ 
 ## Atom
 
 The text editor we'll be using in this course is called **Atom**; it was

@@ -1,5 +1,8 @@
 # Installfest
 
+- [x] [Github and Initial Setup](github.md)
+- [x] [Git](git.md)
+
 ## Bash Configuration (macOS only)
 
 macOS ships with utilities that are slightly different from standard Linux tools.

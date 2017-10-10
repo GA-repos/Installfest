@@ -1,5 +1,10 @@
 # Installfest
 
+- [x] [Github and Initial Setup](github.md)
+- [x] [Git](git.md)
+- [x] [Bash Configuration (macOS only)](bash.md)
+- [x] [Command Line Tools - Xcode (macOS only)](command_line_tools.md)
+
 ## Homebrew
 
 [Homebrew](https://brew.sh/) is a package manager for macOS that makes installing software and useful tools easy. If you are on Linux, the following script will install [Linuxbrew](http://linuxbrew.sh/), a modified version of Hombrew, compatible with Linux.

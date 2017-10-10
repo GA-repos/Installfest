@@ -1,5 +1,7 @@
 # Installfest
 
+- [x] [Github and Initial Setup](github.md)
+
 ## Git
 
 Run the command below in your terminal.

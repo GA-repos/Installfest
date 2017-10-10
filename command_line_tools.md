@@ -1,5 +1,9 @@
 # Installfest
 
+- [x] [Github and Initial Setup](github.md)
+- [x] [Git](git.md)
+- [x] [Bash Configuration (macOS only)](bash.md)
+
 ## Command Line Tools (Xcode)
 
 In order for Homebrew and other tools to work, we'll need to rely on a number of programs that

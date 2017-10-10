@@ -1,5 +1,11 @@
 # Installfest
 
+- [x] [Github and Initial Setup](github.md)
+- [x] [Git](git.md)
+- [x] [Bash Configuration (macOS only)](bash.md)
+- [x] [Command Line Tools - Xcode (macOS only)](command_line_tools.md)
+- [x] [Hombrew](homebrew.md)
+
 ## Node
 
 We're going to be installing Node. Node (and its various packages) will be

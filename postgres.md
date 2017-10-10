@@ -1,5 +1,13 @@
 # Installfest
 
+- [x] [Github and Initial Setup](github.md)
+- [x] [Git](git.md)
+- [x] [Bash Configuration (macOS only)](bash.md)
+- [x] [Command Line Tools - Xcode (macOS only)](command_line_tools.md)
+- [x] [Hombrew](homebrew.md)
+- [x] [Node](node.md)
+- [x] [Ruby](ruby.md)
+
 ## PostgreSQL
 
 We will be installing PostgreSQL, an open source relational database management system. In WDI, we will be writing SQL (structured query language) and maintaining our relational databases using Postgres.
