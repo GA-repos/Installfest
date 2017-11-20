@@ -14,7 +14,7 @@ fi
 # if operating system is NOT macOS
 if [[ $(uname -s) != 'Darwin' ]]; then
   # install build dependency for rbenv
-  sudo apt-get install -y zlib1g-dev libffi-dev
+  sudo apt-get install -y zlib1g-dev libffi-dev gnustep-gui-runtime
 fi
 
 # install rbenv with homebrew
