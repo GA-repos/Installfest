@@ -37,7 +37,7 @@ brew doctor
 -   Once Homebrew says `Your system is ready to brew`, run the following command
 
 ```bash
-config/homebrew.sh update
+scripts/homebrew.sh update
 ```
 
 [Continue With Installfest](node.md)
