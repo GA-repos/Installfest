@@ -27,7 +27,7 @@ if [[ $1 = "node" ]]; then
   . $(brew --prefix nvm)/nvm.sh
   # install node version boron
   # if that fails, install node based on version number
-  nvm install --lts=boron || nvm install 6.11.2
+  nvm install --lts=carbon || nvm install 8.9.1
   # set version 6.x as default node version
   nvm alias default v6
 fi
