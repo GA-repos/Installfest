@@ -57,8 +57,15 @@ Then open the "Settings" panel for the autosave plugin.
 
 ![Atom Settings > Packages](https://cloud.githubusercontent.com/assets/388761/21697829/41986714-d362-11e6-87ac-f0c42eac72e0.png)
 
-Lastly, ensure the "Enabled" option is checked.
+Ensure the "Enabled" option is checked.
 
 ![Autosave Settings](https://cloud.githubusercontent.com/assets/388761/21697838/47338b72-d362-11e6-9106-4a5f476945ca.png)
+
+Lastly, in the top menu, go to `Packages -> Settings View -> Manage Packages`, and search for `linter-stylelint`.
+Then open the "Settings" panel for the linter-stylelint plugin.
+
+Ensure the `Disable when no config file is found` box is _unchecked._
+
+![Packages > Styelint > Settings](https://git.generalassemb.ly/storage/user/5688/files/3a42f7d8-ce05-11e7-8eff-728081b9a270)
 
 [Continue With Installfest](chrome.md)
