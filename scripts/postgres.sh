@@ -3,12 +3,9 @@
 if [[ $(uname -s) = 'Darwin' ]]; then
   # install postgres via homebrew
   brew install postgres
-
-  # create symbolic link for postgres in LaunchAgents
-  ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-
-  # start postgres at login
-  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+  
+  # start postgres
+  brew services start postgres
 
   # create database with current system username `whoami`
   createdb
@@ -20,5 +17,9 @@ else
   # create database with name of current system user
   sudo -u postgres createdb `whoami`
 fi
+
+# Resource bashrc
+  source ~/.bashrc
+
 # install postgres gem for rails
 gem install pg
