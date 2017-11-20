@@ -6,7 +6,7 @@ if which apm; then
   git-plus language-markdown less-than-slash linter linter-csslint linter-eslint \
   linter-markdown linter-rubocop linter-tidy \
   markdown-writer sort-lines language-ember-htmlbars intentions linter-sass-lint \
-  standardjs-snippets ruby-block
+  standardjs-snippets ruby-block open-in-browser
 
   apm disable autocomplete-snippets
   # turn on autosave (manual check in package settings still part of installfest)
