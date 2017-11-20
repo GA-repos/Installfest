@@ -14,10 +14,10 @@ if [[ $(uname -s) = 'Darwin' ]]; then
   if grep -Fxq "test -f ~/.bashrc && source ~/.bashrc" ~/.bash_profile
   then
     # output success message to terminal
-    echo "\nLooks good!"
+    echo $'\nLooks good!'
   else
     # throw error because searched string wasn't added to .bash_profile
-    echo "\nOh No! It looks like there was an issue. Ask for assistance before continuing."
+    echo $'\nOh No! It looks like there was an issue. Ask for assistance before continuing.'
     read -p "Press [ENTER] to continue."
   fi
 
