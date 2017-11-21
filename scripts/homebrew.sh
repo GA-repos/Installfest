@@ -11,8 +11,10 @@ if [[ $# -eq 0 ]] ; then
     # check for issues with the brew installation
     brew doctor
   else
-    # if operating system is linux, tell them they don't need brew
-    echo $'\nLooks like you\'re using a Linux-based OS, which has a built-in alternative to Homebrew already installed. You\'re all set! Please skip ahead to the next step (node.md)\n'
+    # if operating system is linux
+    sudo apt-get update
+    sudo apt-get install curl
+    sudo apt-get install tidy
   fi
 fi
 
