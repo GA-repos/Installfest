@@ -80,6 +80,6 @@ The script will prompt you for some information
   <summary>Linux</summary>
 
   `xclip -selection clipboard < ~/.ssh/id_rsa.pub`
-  </detail>
+  </details>
 
   [Continue With Installfest](bash.md)
