@@ -24,6 +24,8 @@ developed by the GitHub team, and is highly extensible.
 We're going to use Atom's package manager, `apm`, to add a number of helpful
 extensions to your Atom installation.
 
+**During this script, Atom will open for you. Follow the prompt in your terminal and close it when asked to.**
+
 ```bash
 scripts/atom.sh
 ```
