@@ -13,8 +13,8 @@ if [[ $# -eq 0 ]] ; then
   else
     # if operating system is linux
     sudo apt-get update
-    sudo apt-get install curl
-    sudo apt-get install tidy
+    sudo apt-get install -y curl
+    sudo apt-get install -y tidy
   fi
 fi
 
