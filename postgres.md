@@ -21,13 +21,21 @@ Enter the following command in your terminal
 scripts/postgres.sh
 ```
 
-- To ensure Postgres is running on your computer, on macOS type:
+- To ensure Postgres is running on your computer, **on macOS** type:
 
 ```bash
 brew services list
 ```
 
-Postgres will only work if you see a service with a `Name` of postgresql and it says say `started`
+- To ensure Posgres is running on your computer, **on Linux** type:
+
+```bash
+service --status-all | grep postgresql
+```
+
+(*macOS*) Postgres will only work if you see a service with a `Name` of postgresql and `Status` say `started`
+
+(*Linux*) Postgres will only work if you see a service `postgresql` checkbox enabled like this `[ + ]`
 
 If you do not see `postgresql` listed, ask a consultant for assistance, if status does not say `started`, run the following command in your terminal
 
