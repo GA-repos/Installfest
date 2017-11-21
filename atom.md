@@ -18,22 +18,6 @@ developed by the GitHub team, and is highly extensible.
 
 **Note: From this point forward you will open Atom from the command line** with `atom <path_of_file_or_dir_to_open>`
 
-### macOS ONLY
-
-```bash
-# macOS ONLY
-brew cask install atom
-```
-
-### Linux ONLY
-
-Download the `.deb` file from [Atom.io](https://atom.io/)
-Once finished run the following command:
-
-```bash
-# LINUX ONLY
-sudo dpkg -i atom-amd64.deb
-```
 
 ### Atom Add-Ons
 

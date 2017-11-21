@@ -1,4 +1,15 @@
 #!/usr/bin/env bash
+# if operating system is macOS
+if [[ $(uname -s) = 'Darwin' ]]; then
+  # Install Atom via Homebrew
+  brew cask install atom
+else
+  # install Atom for linux
+  sudo add-apt-repository ppa:webupd8team/atom
+  sudo apt update
+  sudo apt install atom 
+fi
+
 # if apm exists (atom CLI tools installed) install these packages
 if which apm; then
   apm install aligner aligner-scss aligner-css aligner-javascript aligner-ruby atom-beautify \
