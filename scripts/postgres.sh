@@ -11,7 +11,7 @@ if [[ $(uname -s) = 'Darwin' ]]; then
   createdb
 else
   # install postgres and build dependency
-  sudo apt-get install postgresql libpq-dev
+  sudo apt-get install -y postgresql libpq-dev
   # create user in postgres with name of current system user
   sudo -u postgres createuser `whoami` -s
   # create database with name of current system user
