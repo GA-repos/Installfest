@@ -24,7 +24,7 @@ rest of Installfest.
 -  Enter the following command into your terminal.
 
     ```bash
-  scripts/homebrew.sh
+    scripts/homebrew.sh
     ```
 
 -  If you're on OSX continue with the steps below. If you're using a Linux-based OS, scroll down and click "Continue With Installfest".
