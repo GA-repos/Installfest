@@ -18,7 +18,10 @@ if [[ $(uname -s) != 'Darwin' ]]; then
 
   # install rbenv by cloning from github
   git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+  # add rbenv to $PATH
   echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+  # start rbenv when a terminal is opened
   echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 else
   # install rbenv with homebrew on OSX only
@@ -45,6 +48,9 @@ EOF
 
 fi
 
+# source bashrc so that the rbenv command is available in this script
+source ~/.bashrc
+
 # initialize rbenv for this script environment
 eval "$(rbenv init -)"
 
@@ -57,11 +63,6 @@ if [[ $(uname -s) = 'Darwin' ]]; then
 else
   # if operating system is NOT macOS
   git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-fi
-
-# check that rbenv is at latest version
-if [[ $(rbenv --version) != 'rbenv 1.1.1' ]]; then
-  echo -e "\n There may have been an issue installing rbenv. Please ask consultant for assistance. \n"
 fi
 
 # add bundler to default-gems file
