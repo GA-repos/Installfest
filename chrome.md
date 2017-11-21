@@ -22,4 +22,4 @@ When done, do the following on any page in Chrome:
 1.  On the top right of the inspector window there are three dots, click that.
 1.  Go to settings and make sure yours look like the following image.
 
-![Chrome Inspector Settings](https://git.generalassemb.ly/storage/user/5965/files/adf9b01a-7ceb-11e7-8dba-d6af627a780c)
+![Chrome Inspector Settings](https://git.generalassemb.ly/storage/user/5688/files/16fa008e-cecb-11e7-98dc-9a59e264c925)
