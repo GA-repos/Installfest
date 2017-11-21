@@ -13,7 +13,13 @@
 
 ## Homebrew
 
-[Homebrew](https://brew.sh/) is a package manager for macOS that makes installing software and useful tools easy. If you are on Linux, the following script will install [Linuxbrew](http://linuxbrew.sh/), a modified version of Hombrew, compatible with Linux.
+[Homebrew](https://brew.sh/) is a package manager for macOS that makes installing software and useful tools easy.
+
+**If you are on a Linux-based OS, like Ubuntu, you already have a tool that does the
+same things as Homebrew. You're all set! You can move on to the next step. Scroll down and click "Continue with Installfest."**
+
+
+For those on OSX:
 
 - We will now execute a script to install Homebrew. Enter the following command
   into your terminal.
