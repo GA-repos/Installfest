@@ -23,7 +23,7 @@ if which apm; then
 
   apm disable autocomplete-snippets
   # turn on autosave (manual check in package settings still part of installfest)
-  apm enable autosave
+  apm enable autosave >> /dev/null 2>&1
 else
   echo -e "\napm - command not found. Open Atom and select atom option at top, then 'Install Shell Commands'. Rerun script. If issues, ask for assistance. \n"
 fi
