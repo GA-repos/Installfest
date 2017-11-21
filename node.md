@@ -27,7 +27,7 @@ between them for different projects.
 scripts/nvm.sh
 ```
 
-**Restart your terminal (close it and reopen it; not just the window!)**
+**Restart your terminal (close it; not just the window! Then reopen it and `cd` back into `wdi/installfest`)**
   - On macOS, this can be done with the keyboard shortcut, (&#8984; + Q)
 
 ### Node
