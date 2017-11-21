@@ -24,6 +24,7 @@ if [[ $1 = "update" ]]; then
     brew update
     brew install tidy-html5
     brew install libsass
+    brew install watchman
   else
     echo $'\nYou\'re still all set! Please move on to the next step.\n'
   fi
