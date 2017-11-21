@@ -31,7 +31,6 @@ Postgres will only work if you see a service with a `Name` of postgresql and it 
 
 If you do not see `postgresql` listed, ask a consultant for assistance, if status does not say `started`, run the following command in your terminal
 
-
 ```bash
 brew services restart postgres
 ```
