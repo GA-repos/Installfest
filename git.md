@@ -67,7 +67,8 @@ The script will prompt you for some information
 9.   Next, log into git.generalassemb.ly, go to [https://git.generalassemb.ly/settings/keys](https://git.generalassemb.ly/settings/keys),
     and paste in the same SSH key.
 
-  *Help! My SSH key is no longer copied to my clipboard* (select your OS then run the below command in terminal)
+ 
+ *Help! My SSH key is no longer copied to my clipboard* (select your OS then run the below command in terminal)
 
   <details>
   <summary>macOS</summary>
@@ -79,27 +80,6 @@ The script will prompt you for some information
   <summary>Linux</summary>
 
   `xclip -selection clipboard < ~/.ssh/id_rsa.pub`
-  </details>
-
-10.  In your terminal, paste in
-```
-  ssh -T git@git.generalassemb.ly
-```
-and press `[Enter]`.
-
-  If you get a prompt along the lines of
-
-  ```bash
-  The authenticity of host 'git.generalassemb.ly (xxx.xxx.xxx.xxx)'... can\'t be established.
-  RSA key fingerprint is XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX.
-  Are you sure you want to continue connecting (yes/no)?
-  ```
-
-  Just type 'yes'. If everything's working, you should get a response like the
-  following:
-
-  ```bash
-  Hi <your_username>! You\'ve successfully authenticated, but GitHub does not provide shell access.
-  ```
+  </detail>
 
   [Continue With Installfest](bash.md)
