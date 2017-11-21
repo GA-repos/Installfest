@@ -16,6 +16,8 @@ else
   sudo -u postgres createuser `whoami` -s
   # create database with name of current system user
   sudo -u postgres createdb `whoami`
+  # start postgres server
+  sudo service postgresql start
 fi
 
 # Resource bashrc
