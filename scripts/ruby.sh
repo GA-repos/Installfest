@@ -15,10 +15,17 @@ fi
 if [[ $(uname -s) != 'Darwin' ]]; then
   # install build dependency for rbenv
   sudo apt-get install -y zlib1g-dev libffi-dev gnustep-gui-runtime
+
+  # install rbenv by cloning from github
+  git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+  echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+else
+  # install rbenv with homebrew on OSX only
+  brew install rbenv
 fi
 
-# install rbenv with homebrew
-brew install rbenv
+
 
 # search for the following string in .bashrc
 if grep -Fq "which rbenv > /dev/null" ~/.bashrc
