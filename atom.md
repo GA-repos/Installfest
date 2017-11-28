@@ -50,8 +50,8 @@ Ensure the "Enabled" option is checked.
 Lastly, in the top menu, go to `Packages -> Settings View -> Manage Packages`, and search for `linter-stylelint`.
 Then open the "Settings" panel for the linter-stylelint plugin.
 
-Ensure the `Disable when no config file is found` box is _unchecked._
+Ensure the `Use Standard` box is _checked._
 
-![Packages > Styelint > Settings](https://git.generalassemb.ly/storage/user/5688/files/3a42f7d8-ce05-11e7-8eff-728081b9a270)
+![Packages > Styelint > Settings](https://git.generalassemb.ly/storage/user/5688/files/acbce054-d42b-11e7-8097-14eb1f42141b)
 
 [Continue With Installfest](chrome.md)
