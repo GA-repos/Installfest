@@ -16,7 +16,7 @@ function parse_git_branch {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
   echo "("${ref#refs/heads/}")"
 }
-# export PS1="\[$(tput bold)\]\w\[$(tput sgr0)\]\$(parse_git_branch)\n$ "
+# export PS1="\[$(tput bold)\]\w\[$(tput sgr0)\] \$(parse_git_branch)\n$ "
 export EDITOR='atom --wait'
 export VISUAL='atom --wait'
 
