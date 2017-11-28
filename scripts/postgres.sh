@@ -7,6 +7,9 @@ if [[ $(uname -s) = 'Darwin' ]]; then
   # start postgres
   brew services start postgres
 
+  # wait a few seconds to allow the service to start
+  sleep 3s
+
   # create database with current system username `whoami`
   createdb
 else
