@@ -75,3 +75,5 @@ rbenv global 2.4.1
 
 # disable documentation generation for gem installations
 echo 'gem: --no-document' >> ~/.gemrc
+
+echo $'\nPlease restart your terminal!'

@@ -24,4 +24,6 @@ In your terminal, run:
 scripts/ruby.sh
 ```
 
+Shut down your terminal and navigate back to the installfest repo before moving on.
+
 [Continue With Installfest](postgres.md)
