@@ -67,19 +67,4 @@ The script will prompt you for some information
 9.   Next, log into git.generalassemb.ly, go to [https://git.generalassemb.ly/settings/keys](https://git.generalassemb.ly/settings/keys),
     and paste in the same SSH key.
 
- 
- *Help! My SSH key is no longer copied to my clipboard* (select your OS then run the below command in terminal)
-
-  <details>
-  <summary>macOS</summary>
-
-  `pbcopy < ~/.ssh/id_rsa.pub`
-  </details>
-
-  <details>
-  <summary>Linux</summary>
-
-  `xclip -selection clipboard < ~/.ssh/id_rsa.pub`
-  </details>
-
   [Continue With Installfest](bash.md)
