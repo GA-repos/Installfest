@@ -11,10 +11,15 @@ if [[ $# -eq 0 ]] ; then
     # check for issues with the brew installation
     brew doctor
   else
+    # make it so that if any of these installs fail, the script will exit
+    set -e
+
     # if operating system is linux
     sudo apt-get update
     sudo apt-get install -y curl
     sudo apt-get install -y tidy
+
+    echo $'\nAll set! Your'e on Linux, so you don\'t need to continue with homebrew.md. Click "Continue with Installfest".
   fi
 fi
 
