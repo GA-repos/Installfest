@@ -40,7 +40,7 @@ Run the following command in your terminal:
 scripts/nvm.sh node
 ```
 
-**AGAIN, Restart your Terminal**
+**AGAIN, Restart your terminal and navigate back to the installfest directory.**
 
 ### NPM Packages
 Now, we will use Node's associated package manager, `npm`, to download and install some Node
