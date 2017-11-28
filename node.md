@@ -28,8 +28,8 @@ scripts/nvm.sh
 ```
 
 **Restart your terminal (close it; not just the window! Then reopen it and `cd` back into `wdi/installfest`)**
-  - On macOS, this can be done with the keyboard shortcut, (&#8984; + Q)
-  - On Linux this can be done with the keyboard shortcut, (CTRL + Q)
+  - On macOS, this can be done with the keyboard shortcut (&#8984; + Q)
+  - On Linux this can be done with the keyboard shortcut (CTRL + D)
 
 ### Node
 Now we can install Node!
