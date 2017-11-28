@@ -37,11 +37,7 @@ service --status-all | grep postgresql
 
 (*Linux*) Postgres will only work if you see a service `postgresql` checkbox enabled like this `[ + ]`
 
-If you do not see `postgresql` listed, ask a consultant for assistance, if status does not say `started`, run the following command in your terminal
-
-```bash
-brew services restart postgres
-```
+If Postgres didn't start correctly according to the criteria above, ask a consultant for assistance.
 
 Verify that Postgres is working with the command
 
