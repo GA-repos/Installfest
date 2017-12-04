@@ -8,27 +8,31 @@ if [[ $# -eq 0 ]] ; then
     sudo chown -R $(whoami):admin /usr/local
     # use installed version of ruby to execute curl command to install homebrew
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    # check for issues with the brew installation
+    brew doctor
   else
-    # if operating system is linux
-    # install the following tools
-    sudo apt-get install build-essential curl git python-setuptools ruby
-    # use ruby to execute curl request to install linuxbrew
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
-    # add location of linuxbrew to PATH for this script only
-    PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-    # add following string to .bashrc
-    # this will make sure linuxbrew is in PATH
-    # ensure use linuxbrew version of software instead of other versions installed
-    echo 'export PATH="$HOME/.linuxbrew/bin:$PATH"' >> ~/.bashrc
-  fi
+    # make it so that if any of these installs fail, the script will exit
+    set -e
 
-  brew doctor
+    # if operating system is linux
+    sudo apt-get update
+    sudo apt-get install -y curl
+    sudo apt-get install -y tidy
+
+    echo $'\nAll set! Your'e on Linux, so you don\'t need to continue with homebrew.md. Click "Continue with Installfest".
+  fi
 fi
 
 # if script is run with argument 'update'
 if [[ $1 = "update" ]]; then
-  # update homebrew and install following packages
-  brew update
-  brew install tidy-html5
-  brew install libsass
+  # if operating system is OSX
+  if [[ $(uname -s) = 'Darwin' ]]; then
+    # update homebrew and install following packages
+    brew update
+    brew install tidy-html5
+    brew install libsass
+    brew install watchman
+  else
+    echo $'\nYou\'re still all set! Please move on to the next step.\n'
+  fi
 fi

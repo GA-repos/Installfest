@@ -14,11 +14,21 @@ fi
 # if operating system is NOT macOS
 if [[ $(uname -s) != 'Darwin' ]]; then
   # install build dependency for rbenv
-  sudo apt-get install libffi-dev
+  sudo apt-get install -y zlib1g-dev libffi-dev gnustep-gui-runtime libssl-dev libreadline-dev
+
+  # install rbenv by cloning from github
+  git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+  # add rbenv to $PATH
+  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+  # start rbenv when a terminal is opened
+  echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+else
+  # install rbenv with homebrew on OSX only
+  brew install rbenv
 fi
 
-# install rbenv with homebrew
-brew install rbenv
+
 
 # search for the following string in .bashrc
 if grep -Fq "which rbenv > /dev/null" ~/.bashrc
@@ -38,6 +48,9 @@ EOF
 
 fi
 
+# source bashrc so that the rbenv command is available in this script
+source ~/.bashrc
+
 # initialize rbenv for this script environment
 eval "$(rbenv init -)"
 
@@ -52,11 +65,6 @@ else
   git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 fi
 
-# check that rbenv is at latest version
-if [[ $(rbenv --version) != 'rbenv 1.1.1' ]]; then
-  echo -e "\n There may have been an issue installing rbenv. Please ask consultant for assistance. \n"
-fi
-
 # add bundler to default-gems file
 echo bundler >> $(rbenv root)/default-gems
 
@@ -67,3 +75,5 @@ rbenv global 2.4.1
 
 # disable documentation generation for gem installations
 echo 'gem: --no-document' >> ~/.gemrc
+
+echo $'\nPlease restart your terminal!'

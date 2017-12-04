@@ -25,7 +25,7 @@ in the correct directory.
 -   We need to [fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repo ([installfest](https://git.generalassemb.ly/ga-wdi-boston/installfest)). Once you
     fork to your Github Enterprise account, make sure you copy the HTTPS clone link (It will
-    look something like `https://git.generalassemb.ly/<your github name>/orientation.git`)
+    look something like `https://git.generalassemb.ly/<your github name>/installfest.git`)
 
 -   In your terminal, navigate to your home directory `cd ~`, then run `git clone <link copied from github>`. This will create a directory named `installfest` in your home folder `~/installfest/`
 

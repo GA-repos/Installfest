@@ -16,7 +16,7 @@ function parse_git_branch {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
   echo "("${ref#refs/heads/}")"
 }
-export PS1="\w \$(parse_git_branch)\n\$ "
+export PS1="\[$(tput bold)\]\w\[$(tput sgr0)\] \$(parse_git_branch)\n$ "
 export EDITOR='atom --wait'
 export VISUAL='atom --wait'
 
@@ -48,7 +48,11 @@ git config --global core.excludesfile ~/.gitignore
 cp .gitignore ~/.gitignore
 
 # generate new ssh key and add it
-ssh-keygen -t rsa -C "$email"
+# the -t flag specifies the type of key
+# the -f flag specifies the path
+# the -N flag specifies a passphrase, blank in this case
+# the -C flag adds a comment to help identify the SSH key
+ssh-keygen -t rsa -f ~/.ssh/id_rsa -N '' -C "$email"
 ssh-add ~/.ssh/id_rsa
 
 # if operating system is macOS
