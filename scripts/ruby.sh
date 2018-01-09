@@ -65,8 +65,8 @@ else
   git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 fi
 
-# add bundler to default-gems file
-echo bundler >> $(rbenv root)/default-gems
+# install default gems
+gem install bundler byebug pry
 
 # install Ruby version
 rbenv install 2.4.1
