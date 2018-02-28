@@ -2,7 +2,7 @@
 
 - [x] [Github and Initial Setup](github.md)
 - [x] [Git](git.md)
-- [x] [Bash Configuration (macOS only)](bash.md)
+- [x] [Bash Configuration](bash.md)
 - [x] [Command Line Tools - Xcode (macOS only)](command_line_tools.md)
 - [ ] **Homebrew**
 - [ ] [Node](node.md)
