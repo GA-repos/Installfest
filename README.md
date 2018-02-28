@@ -25,5 +25,6 @@ Setup | Description
 [Node](node.md) | Install nvm, Node, and global npm packages
 [Ruby](ruby.md) | Install rbenv and Ruby
 [PostgreSQL](postgres.md) | Install PostgreSQL
+[MongoDB](mongodb.md) | Install MongoDB
 [Atom](atom.md) | Install Atom and required plugins
 [Chrome](chrome.md) | Install Chrome and configure settings

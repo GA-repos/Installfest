@@ -8,6 +8,7 @@
 - [x] [Node](node.md)
 - [x] [Ruby](ruby.md)
 - [ ] **PostgreSQL**
+- [ ] [MongoDB](mongodb.md)
 - [ ] [Atom](atom.md)
 - [ ] [Chrome](chrome.md)
 
@@ -56,4 +57,4 @@ Type "help" for help.
 
 Exit the psql terminal by typing `\q`, followed by `Enter`
 
-[Continue With Installfest](atom.md)
+[Continue With Installfest](mongodb.md)
