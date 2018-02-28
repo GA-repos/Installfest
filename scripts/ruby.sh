@@ -65,12 +65,6 @@ else
   git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 fi
 
-# update to latest version of RubyGems
-gem update --system
-
-# install default gems
-gem install bundler byebug pry rails
-
 # install Ruby version
 rbenv install 2.4.1
 # set Ruby version used globally
@@ -78,5 +72,11 @@ rbenv global 2.4.1
 
 # disable documentation generation for gem installations
 echo 'gem: --no-document' >> ~/.gemrc
+
+# update to latest version of RubyGems
+gem update --system
+
+# install default gems
+gem install bundler byebug pry rails
 
 echo $'\nPlease restart your terminal!'
