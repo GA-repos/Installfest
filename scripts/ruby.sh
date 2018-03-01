@@ -21,14 +21,10 @@ if [[ $(uname -s) != 'Darwin' ]]; then
 
   # add rbenv to $PATH
   echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-  # start rbenv when a terminal is opened
-  echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 else
   # install rbenv with homebrew on OSX only
   brew install rbenv
 fi
-
-
 
 # search for the following string in .bashrc
 if grep -Fq "which rbenv > /dev/null" ~/.bashrc
@@ -50,6 +46,10 @@ fi
 
 # source bashrc so that the rbenv command is available in this script
 source ~/.bashrc
+
+# on Ubuntu that's not enough to update $PATH
+# TODO: find out why, but update it manually for now
+PATH="$HOME/.rbenv/bin:$PATH"
 
 # initialize rbenv for this script environment
 eval "$(rbenv init -)"
