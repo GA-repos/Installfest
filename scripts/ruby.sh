@@ -77,6 +77,6 @@ echo 'gem: --no-document' >> ~/.gemrc
 gem update --system
 
 # install default gems
-gem install bundler byebug pry rails
+gem install byebug pry rails
 
 echo $'\nPlease restart your terminal!'
