@@ -31,12 +31,15 @@ brew services list
 - To ensure Posgres is running on your computer, **on Linux** type:
 
 ```bash
-service --status-all | grep postgresql
+service postgresql status
 ```
 
 (*macOS*) Postgres will only work if you see a service with a `Name` of postgresql and `Status` say `started`
 
-(*Linux*) Postgres will only work if you see a service `postgresql` checkbox enabled like this `[ + ]`
+(*Linux*) Postgres will only work if you see a green circle and the words
+"active (running)" somewhere in the output.
+
+
 
 If Postgres didn't start correctly according to the criteria above, ask a consultant for assistance.
 
