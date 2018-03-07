@@ -5,7 +5,7 @@ set -e
 if [[ $(uname -s) = 'Darwin' ]]; then
   brew install mongodb
 
-  brew services start mongodb
+  brew services restart mongodb
 else
   sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
 
