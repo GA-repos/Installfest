@@ -27,10 +27,9 @@ EOF
   # if script is run with argument 'node'
   if [[ $1 = "node" ]]; then
     # source nvm for the environment of this script execution
-    . $(brew --prefix nvm)/nvm.sh
-    # install node version carbon
-    # if that fails, install node based on version number
-    nvm install --lts=carbon || nvm install 8.9.1
+    . "$(brew --prefix nvm)/nvm.sh"
+    # install version 8.9.1 
+    nvm install v8.9.1
     # set version 8.9.1 as default node version
     nvm alias default v8.9.1
   fi
@@ -45,10 +44,9 @@ else
   # if script is run with argument node
   if [[ $1 = "node" ]]; then
     # source NVM
-    source $NVM_DIR/nvm.sh
-    # install node version carbon
-    # if that fails, install node based on version number
-    nvm install --lts=carbon || nvm install 8.9.1
+    source "$NVM_DIR/nvm.sh"
+    # install node LTS    
+    nvm install v8.9.1
     # set version 8.9.1 as default node version
     nvm alias default v8.9.1
   fi

@@ -2,12 +2,13 @@
 
 - [x] [Github and Initial Setup](github.md)
 - [x] [Git](git.md)
-- [x] [Bash Configuration (macOS only)](bash.md)
+- [x] [Bash Configuration](bash.md)
 - [x] [Command Line Tools - Xcode (macOS only)](command_line_tools.md)
 - [x] [Homebrew](homebrew.md)
 - [x] [Node](node.md)
 - [x] [Ruby](ruby.md)
 - [x] [PostgreSQL](postgres.md)
+- [x] [MongoDB](mongodb.md)
 - [x] [Atom](atom.md)
 - [ ] **Chrome**
 

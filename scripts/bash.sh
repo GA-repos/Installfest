@@ -1,4 +1,14 @@
 #!/usr/bin/env bash
+
+if [[ $SHELL != '/bin/bash' ]]; then
+  echo "shell was $SHELL" 
+  echo 'changing shell to bash...'
+  chsh -s /bin/bash "$(whoami)"
+  printf '\nRESTART YOUR TERMINAL NOW to load the new bash shell\n'
+else
+  echo 'shell is already bash'
+fi
+
 # if operating system is macOS
 if [[ $(uname -s) = 'Darwin' ]]; then
   # create .bashrc file in home directory
@@ -20,5 +30,6 @@ if [[ $(uname -s) = 'Darwin' ]]; then
     echo $'\nOh No! It looks like there was an issue. Ask for assistance before continuing.'
     read -p "Press [ENTER] to continue."
   fi
-
+else
+  echo 'All set. Move on to the next section.'
 fi
