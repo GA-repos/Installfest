@@ -60,10 +60,15 @@ if [[ $(uname -s) = 'Darwin' ]]; then
   # use pbcopy to copy contents of id_rsa.pub to clipboard
   pbcopy < ~/.ssh/id_rsa.pub
 else
-  # install xclip
-  sudo apt install xclip
-  # use xclip to copy contents of id_rsa.pub to clipboard
-  xclip -selection clipboard < ~/.ssh/id_rsa.pub
+  # differentiate between Ubuntu on Windows and Linux
+  if grep -q Microsoft /proc/version; then
+      clip.exe < ~/.ssh/id_rsa.pub
+  else
+    # install xclip
+    sudo apt install xclip
+    # use xclip to copy contents of id_rsa.pub to clipboard
+    xclip -selection clipboard < ~/.ssh/id_rsa.pub
+  fi
 fi
 
 read -p "Key copied to clipboard. Log in and go to settings on Github. Follow these next steps outlined in Installfest doc, then press [ENTER] to continue."
