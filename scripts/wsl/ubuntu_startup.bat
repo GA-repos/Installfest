@@ -3,7 +3,7 @@ bash --version 2> nul > nul
 if not %errorlevel% == 0 (
     @echo OFF
     lxrun 2> nul > nul
-    if not %errorlevel% == 0 (
+    if %errorlevel% == 9009 (
         powershell -command Start-Process powershell -Verb runAs -Argument 'Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux'
     ) else (
         powershell -command Start-Process powershell -Verb runAs -Argument 'lxrun /install'
