@@ -21,8 +21,7 @@ if [[ $(uname -s) = 'Darwin' ]]; then
   echo 'test -f ~/.bashrc && source ~/.bashrc' >> ~/.bash_profile
 
   # if the following string is in ~/.bash_profile
-  if grep -Fxq "test -f ~/.bashrc && source ~/.bashrc" ~/.bash_profile
-  then
+  if grep -Fxq "test -f ~/.bashrc && source ~/.bashrc" ~/.bash_profile; then
     # output success message to terminal
     echo $'\nLooks good!'
   else
@@ -30,6 +29,13 @@ if [[ $(uname -s) = 'Darwin' ]]; then
     echo $'\nOh No! It looks like there was an issue. Ask for assistance before continuing.'
     read -p "Press [ENTER] to continue."
   fi
+# if Ubunutu Linux on WSL for Windows 10
+elif grep -q Microsoft /proc/version; then
+  USERNAME="$(cmd.exe /c echo %username% | sed 's/ /\\ /g' | tr -dc '[[:print:]]')"
+  COMMAND="ln -sF /mnt/c/Users/$USERNAME/ ~/winhome"
+  eval $COMMAND
+  echo 'Set up your Windows Home directory at "~/winhome".'
+  echo 'All Set. Move on to the next section.'
 else
   echo 'All set. Move on to the next section.'
 fi
