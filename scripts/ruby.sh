@@ -14,7 +14,8 @@ fi
 # if operating system is NOT macOS
 if [[ $(uname -s) != 'Darwin' ]]; then
   # install build dependency for rbenv
-  sudo apt-get install -y zlib1g-dev libffi-dev gnustep-gui-runtime libssl-dev libreadline-dev
+  sudo apt-get update
+  sudo apt-get install -y build-essential zlib1g-dev libffi-dev gnustep-gui-runtime libssl-dev libreadline-dev
 
   # install rbenv by cloning from github
   git clone https://github.com/rbenv/rbenv.git ~/.rbenv
