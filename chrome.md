@@ -19,7 +19,7 @@ default browser.
 
 When done, do the following on any page in Chrome:
 
-1.  On MacOS, press `Command + option + J` simultaneously to open up the Chrome inspector
+1.  On MacOS, press `Command + option + J` simultaneously to open up the Chrome inspector. On other systems press `Control + shift + J`.
 1.  On the top right of the inspector window there are three dots, click that.
 1.  Go to settings and make sure yours look like the following image.
 

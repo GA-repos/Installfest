@@ -55,4 +55,10 @@ Ensure the `Use Standard` box is _checked._
 
 ![Packages > Styelint > Settings](https://git.generalassemb.ly/storage/user/5688/files/acbce054-d42b-11e7-8097-14eb1f42141b)
 
+#### Windows 10
+It is **VERY** important that you only edit files in the Windows filesystem with Atom. Save all of your projects that you want to edit with Atom somewhere in `~/winhome`, **NEVER** in the WSL Ubuntu filesystem in `/`. 
+
+The reasonf for this is that WSL Ubuntu can edit Windows files just fine, but editing WSL Ubuntu files with Windows programs (such as Atom which we just installed), corrupts them. Your instructors will provide more context for this!
+
 [Continue With Installfest](chrome.md)
+

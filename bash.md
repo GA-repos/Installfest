@@ -12,10 +12,10 @@
 - [ ] [Atom](atom.md)
 - [ ] [Chrome](chrome.md)
 
-## Bash Configuration (macOS only)
+## Bash Configuration (macOS and Windows 10 only)
 
-macOS ships with utilities that are slightly different from standard Linux tools.
-To smooth out *some* of the differences, we need to change how macOS loads our
+macOS ships with utilities that are slightly different from standard Linux tools. Windows 10 with WSL has the same differences.
+To smooth out *some* of the differences, we need to change how macOS/WSL loads our
 shell (`bash`) configuration. On Linux, this script will check that you are using
 the correct shell.
 
