@@ -1,6 +1,7 @@
 @echo OFF
 
 REM check if bash is installed
+echo "You may need to press Enter a few times if the script stalls out here"
 bash --version 1>nul 2>nul
 if not %errorlevel% == 0 (
     
