@@ -4,7 +4,7 @@
 - [x] [Git](git.md)
 - [ ] **Bash Configuration**
 - [ ] [Command Line Tools - Xcode (macOS only)](command_line_tools.md)
-- [ ] [Homebrew](homebrew.md)
+- [ ] [Homebrew (macOS only)](homebrew.md)
 - [ ] [Node](node.md)
 - [ ] [Ruby](ruby.md)
 - [ ] [PostgreSQL](postgres.md)

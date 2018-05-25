@@ -21,7 +21,7 @@ Setup | Description
 [Git](git.md) | Set global Git config, add SSH keys for GitHub & GHE
 [Bash Configuration](bash.md) | Set up necessary bash files
 [Command Line Tools - Xcode (macOS only)](command_line_tools.md) | Install Xcode
-[Homebrew](homebrew.md) | Install Homebrew package manager
+[Homebrew (macOS only)](homebrew.md) | Install Homebrew package manager
 [Node](node.md) | Install nvm, Node, and global npm packages
 [Ruby](ruby.md) | Install rbenv and Ruby
 [PostgreSQL](postgres.md) | Install PostgreSQL
