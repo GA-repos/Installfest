@@ -46,6 +46,12 @@ The script will prompt you for some information
   `xclip -selection clipboard < ~/.ssh/id_rsa.pub`
   </details>
 
+  <details>
+  <summary>Windows 10</summary>
+
+  `clip.exe < ~/.ssh/id_rsa.pub`
+  </details>
+
 7. Click the `Add SSH key` button
 
 8. In your terminal, press `[Enter]` to continue
