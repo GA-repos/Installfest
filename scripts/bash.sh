@@ -34,6 +34,7 @@ elif grep -q Microsoft /proc/version; then
   USERNAME="$(cmd.exe /c echo %username% | sed 's/ /\\ /g' | tr -dc '[[:print:]]')"
   COMMAND="ln -sF /mnt/c/Users/$USERNAME/ ~/winhome"
   eval $COMMAND
+  echo 'cd ~/winhome' >> ~/.bash_profile
   echo 'Set up your Windows Home directory at "~/winhome".'
   echo 'All Set. Move on to the next section.'
 else
