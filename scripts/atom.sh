@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
+
+# if operating system is Ubuntu on Windows
+if grep -q Microsoft /proc/version 1>/dev/null 2>/dev/null; then
+    yes | cp -rf scripts/wsl/atom_install.bat ~/winhome
+    cmd="powershell.exe -command Start-Process powershell -Verb runAs -ArgumentList 'cd \$env:HOMEPATH;./atom_install.bat'"
+    $cmd
+    exit
+fi
+
 # if operating system is macOS
 if [[ $(uname -s) = 'Darwin' ]]; then
   # Install Atom via Homebrew
