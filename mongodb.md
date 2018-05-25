@@ -35,7 +35,11 @@ the right of it.
 Run `service mongod status`. You should see a green circle and the words
 "active (running)" somewhere in the output.
 
-### On either OS
+### Windows 10
+
+Run `sudo service monogodb status`. You should see "[OK]" somewhere in the output.
+
+### On any OS
 
 If the service appears to be running, type `mongo` and hit enter.
 
