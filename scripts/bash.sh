@@ -9,8 +9,8 @@ else
   echo 'shell is already bash'
 fi
 
-# if operating system is macOS
-if [[ $(uname -s) = 'Darwin' ]]; then
+# if operating system is macOS or Ubuntu Linux on WSL for Windows 10
+if [[ $(uname -s) = 'Darwin' ]] || [[ "$(grep -c Microsoft /proc/version)" -ge 1 ]]; then
   # create .bashrc file in home directory
   touch ~/.bashrc
   # create .bash_profile file in home directory
@@ -31,6 +31,8 @@ if [[ $(uname -s) = 'Darwin' ]]; then
   fi
 # if Ubunutu Linux on WSL for Windows 10
 elif grep -q Microsoft /proc/version; then
+
+  # set up symlink to ~/winhome (Window 10 %userprofile% dir) and start bash sessions there
   USERNAME="$(cmd.exe /c echo %username% | sed 's/ /\\ /g' | tr -dc '[[:print:]]')"
   COMMAND="ln -sF /mnt/c/Users/$USERNAME/ ~/winhome"
   eval $COMMAND
