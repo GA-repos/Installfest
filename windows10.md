@@ -25,17 +25,25 @@ This class requires a Linux/Unix console. However, Windows 10 does have a Linux/
 11. Scroll down to the **Advanced** button at the bottom of the Settings window and click it.
 12. Find **Protect you and your device from dangerous sites** and turn it back **ON**.
 
-### Install and set up WSL
+### Turn on WSL
 
 13. Unzip the downloaded file by clicking right-clicking on it and selecting **Extract all...**.
-14. Go into the extracted `ubuntu_install` folder and double click on the file `ubuntu_install` within it.
+14. Go into the extracted `ubuntu_install` folder and double click on the file `ubuntu_install` within it. It will have a little gear icon on it indicating that it is a Windows `cmd` script.
 15. If a **Windows protected your PC** window opens up, click the **More info** link and click the **Run anyway** button.
 16. After the first install step, you will be asked if you want to restart. Type `Y` and press **Enter** to restart.
-17. Navigate back to the `ubuntu_install` folder and run the script again. You may be prompted to confirm that you want to install Ubuntu Linux. Type `Y` and press **Enter** to proceed with install.
-18. Run the script again and you will see:
+
+### Install Ubuntu for Windows
+
+17. Navigate back to the `ubuntu_install` folder and run the `ubuntu_install` script again (same as steps 14-15). You may be prompted to confirm that you want to install Ubuntu Linux. Type `Y` and press **Enter** to proceed with install.
+18. Once the install finished, you will be asked to enter an new username. Enter a username of your choice and press **Enter**.
+19. You will be prompted to enter and then re-enter a new password. Pick any password you like, type it in and press **Enter** both time. One important thing to note is that on Linux, password entry does not show any characters on the screen ie `***` won't show up when you type in passwords, but they are in fact being recorded so type them in anyway!
+
+### Confirm Ubuntu installed properly
+
+20. Run the `ubuntu_install` script again (same as steps 14-15) and you will see:
     ```sh
     Installation complete! Open Bash on Ubuntu for Windows from your Start Menu. If you have trouble finding/running it, ask an Instructor for help. Press Enter to close
     ```
-    You are done! Press **Enter** to exit. If you did not see this message, ask an Instructor for help.
+    You are done! Press **Enter** to exit and the script will automatically delete itself. If you did not see this message, ask an Instructor for help.
 
 > Whenever you are asked to use a terminal / console, use **Bash on Ubuntu for Windows** from now on.
