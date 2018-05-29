@@ -30,7 +30,7 @@ if [[ $(uname -s) = 'Darwin' ]] || [[ "$(grep -c Microsoft /proc/version)" -ge 1
     read -p "Press [ENTER] to continue."
   fi
 # if Ubunutu Linux on WSL for Windows 10
-elif grep -q Microsoft /proc/version; then
+if grep -q Microsoft /proc/version; then
 
   # set up symlink to ~/winhome (Window 10 %userprofile% dir) and start bash sessions there
   USERNAME="$(cmd.exe /c echo %username% | sed 's/ /\\ /g' | tr -dc '[[:print:]]')"
