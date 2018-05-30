@@ -28,7 +28,7 @@ scripts/postgres.sh
 brew services list
 ```
 
-- To ensure Posgres is running on your computer, **on Linux** type:
+- To ensure Posgres is running on your computer, **on Linux and Windows 10** type:
 
 ```bash
 service postgresql status
@@ -36,7 +36,7 @@ service postgresql status
 
 (*macOS*) Postgres will only work if you see a service with a `Name` of postgresql and `Status` say `started`
 
-(*Linux*) Postgres will only work if you see a green circle and the words
+(*Linux and Windows 10*) Postgres will only work if you see a green circle and the words
 "active (running)" somewhere in the output.
 
 
