@@ -30,7 +30,7 @@ commands:
 Run `brew services list`. You should see `mongodb` with the word "started" to
 the right of it.
 
-### Ubuntu
+### Linux
 
 Run `service mongod status`. You should see a green circle and the words
 "active (running)" somewhere in the output.
