@@ -29,8 +29,35 @@ if [[ $(uname -s) = 'Darwin' ]] || [[ "$(grep -c Microsoft /proc/version)" -ge 1
     echo $'\nOh No! It looks like there was an issue. Ask for assistance before continuing.'
     read -p "Press [ENTER] to continue."
   fi
+fi
+
 # if Ubunutu Linux on WSL for Windows 10
 if grep -q Microsoft /proc/version; then
+
+    # allow Windows apps to edit files without hogging the console std out
+    # when run from WSL
+    cat <<'EOF' >> ~/.bashrc
+
+# OPEN WINDOWS TEXT EDITORS WITHOUT HOGGING THE SHELL STANDARD OUTPUT
+
+# you can add Windows app commands that you want to be able to access
+# from WSL to `windows_apps` (make sure you put "\" and a line break
+# between each name)
+windows_apps=("code" \
+              "subl" \
+              "atom")
+
+# loop through each element of `windows_apps`
+for i in "${windows_apps[@]}"
+do
+    # if the command exist, alias it so that it open without
+    # continously pushing messages to the shell
+    if [ -x "$(command -v $1)"]; then
+        alias "$i"="cmd.exe /c $i $1"
+    fi
+done
+
+EOF
 
   # set up symlink to ~/winhome (Window 10 %userprofile% dir) and start bash sessions there
   USERNAME="$(cmd.exe /c echo %username% | sed 's/ /\\ /g' | tr -dc '[[:print:]]')"
