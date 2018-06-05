@@ -62,6 +62,7 @@ if [[ $(uname -s) = 'Darwin' ]]; then
 else
   # differentiate between Ubuntu on Windows and Linux
   if grep -q Microsoft /proc/version; then
+      git config --global core.editor "nano"
       clip.exe < ~/.ssh/id_rsa.pub
   else
     # install xclip
