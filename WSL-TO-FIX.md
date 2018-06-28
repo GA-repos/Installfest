@@ -36,3 +36,22 @@ EOF
 
 FROM NOW ON, in order to fix any file that is giving this issue, run this: 
 `d2u <your file>`
+
+**UPDATE**: this is much better. You can set default line endings in both Atom
+and VSCode using the following:
+```bash
+
+# ATOM_SETTINGS="~/.atom/config.cson"
+ATOM_SETTINGS="%USERPROFILE%\.atom\config.cson"
+awk 'f{$0="    defaultLineEnding: \"LF\"";f=0}/line-ending-selector/{f=1}1' ~/.atom/config.cson > temp.cson
+cp temp.cson ~/.atom/config.cson
+cat ~/.atom/config.cson
+rm temp.cson
+
+
+# CODE_SETTINGS="$HOME/Library/Application Support/Code/User/settings.json"
+CODE_SETTINGS="%APPDATA%\Code\User\settings.json"
+cat $CODE_SETTINGS | jq '.["files.eol"] |= "\n"' > temp.cson
+cp temp.cson $CODE_SETTINGS
+rm temp.cson
+```
