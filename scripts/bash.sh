@@ -34,9 +34,16 @@ fi
 # if Ubunutu Linux on WSL for Windows 10
 if grep -q Microsoft /proc/version; then
 
+    sudo apt-get install dos2unix
+
     # allow Windows apps to edit files without hogging the console std out
-    # when run from WSL
+    # when run from WSL and add d2u to convert CRLF to LF line endings
     cat <<'EOF' >> ~/.bashrc
+
+# CONVERT A WINDOWS CRLF LINE ENDING FILE TO POSIX LF LINE ENDING FILE
+d2u () {
+  dos2unix -n $1 $1
+}
 
 # OPEN WINDOWS TEXT EDITORS WITHOUT HOGGING THE SHELL STANDARD OUTPUT
 

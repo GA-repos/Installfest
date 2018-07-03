@@ -2,9 +2,17 @@
 
 # if operating system is Ubuntu on Windows
 if grep -q Microsoft /proc/version 1>/dev/null 2>/dev/null; then
+    # install atom
     yes | cp -rf scripts/wsl/atom_install.bat ~/winhome
     cmd="powershell.exe -command Start-Process powershell -Verb runAs -ArgumentList 'cd \$env:HOMEPATH;./atom_install.bat'"
     $cmd
+
+    # set up ATOM to have correct line endings (LF) by default
+    ATOM_SETTINGS="%USERPROFILE%\.atom\config.cson"
+    awk 'f{$0="    defaultLineEnding: \"LF\"";f=0}/line-ending-selector/{f=1}1' ~/.atom/config.cson > temp.cson
+    cp temp.cson ~/.atom/config.cson
+    cat ~/.atom/config.cson
+    rm temp.cson
     exit
 fi
 
