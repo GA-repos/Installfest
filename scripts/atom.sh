@@ -7,13 +7,14 @@ if grep -q Microsoft /proc/version 1>/dev/null 2>/dev/null; then
     cmd="powershell.exe -command Start-Process powershell -Verb runAs -ArgumentList 'cd \$env:HOMEPATH;./atom_install.bat'"
     $cmd
 
+    # $FIX_ME$ - THE RELATIVE PATH HERE DOES NOT WORK FROM WSL
     # set up ATOM to have correct line endings (LF) by default
-    ATOM_SETTINGS="%USERPROFILE%\.atom\config.cson"
-    awk 'f{$0="    defaultLineEnding: \"LF\"";f=0}/line-ending-selector/{f=1}1' ~/.atom/config.cson > temp.cson
-    cp temp.cson ~/.atom/config.cson
-    cat ~/.atom/config.cson
-    rm temp.cson
-    exit
+    # ATOM_SETTINGS="%USERPROFILE%\.atom\config.cson"
+    # awk 'f{$0="    defaultLineEnding: \"LF\"";f=0}/line-ending-selector/{f=1}1' ~/.atom/config.cson > temp.cson
+    # cp temp.cson ~/.atom/config.cson
+    # cat ~/.atom/config.cson
+    # rm temp.cson
+    # exit
 fi
 
 # if operating system is macOS
