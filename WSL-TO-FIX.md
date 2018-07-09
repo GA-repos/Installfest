@@ -55,3 +55,7 @@ cat $CODE_SETTINGS | jq '.["files.eol"] |= "\n"' > temp.cson
 cp temp.cson $CODE_SETTINGS
 rm temp.cson
 ```
+
+# Ruby Object Self
+
+- `say` method not working on non macOS systems because it's not there. Had a few students try `sudo apt-get install gnustep-gui-runtime` to get the say command, but no go.
