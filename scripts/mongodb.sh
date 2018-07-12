@@ -18,12 +18,14 @@ else
 
   if grep -q Microsoft /proc/version; then
 
+    sudo mkdir -p /data/db
+
+    sudo chown `whoami` /data/db
+
     sudo apt-get install -y mongodb
     
     sudo service mongodb start 
-    
-    sudo mongod
-  
+      
   else
 
     sudo apt install -y mongodb-org

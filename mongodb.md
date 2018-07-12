@@ -37,7 +37,7 @@ Run `service mongod status`. You should see a green circle and the words
 
 ### Windows 10
 
-Run `sudo service monogodb status`. You should see "[OK]" somewhere in the output.
+Run `sudo service mongodb status`. You should see a status **without** `"not running"`and without a red asterisk.
 
 ### On any OS
 
@@ -46,8 +46,6 @@ If the service appears to be running, type `mongo` and hit enter.
 You should see something like this:
 ```
 MongoDB shell version v3.4.10
-connecting to: mongodb://127.0.0.1:27017
-MongoDB server version: 3.4.10
 ```
 possibly followed by some warnings/errors. Ignore these warnings/errors for now.
 You should notice that your command prompt is gone, replaced with a `>`.
