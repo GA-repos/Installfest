@@ -32,6 +32,8 @@ if grep -q Microsoft /proc/version 1>/dev/null 2>/dev/null; then
   psql -c "DROP DATABASE template1;" &> /dev/null
   psql -c "CREATE DATABASE template1 WITH TEMPLATE = template0 ENCODING = 'UNICODE';" &> /dev/null
   psql -c "UPDATE pg_database SET datistemplate=TRUE WHERE datname='template1';" &> /dev/null
+  psql -c "\c template1;" &> /dev/null
+  psql -c "VACUUM FREEZE;" &> /dev/null
 fi
 
 # Resource bashrc
