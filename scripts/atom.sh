@@ -33,7 +33,7 @@ if which apm; then
     echo "atom.config.set(\"line-ending-selector.defaultLineEnding\", \"LF\")" >> ~/winhome/.atom/init.coffee
 
     # makes batch script wrapper for wsl rubocop so that Atom, a windows app, can use it
-    echo "@echo off" > ~/winhome.atom/rubocop.bat
+    echo "@echo off" > ~/winhome/.atom/rubocop.bat
     echo "bash.exe -c \"`rbenv which rubocop` %*\"" >> ~/winhome/.atom/rubocop.bat
     
     # sets up correct rubocop path for atom rubocop-linter
