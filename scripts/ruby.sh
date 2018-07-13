@@ -78,6 +78,6 @@ echo 'gem: --no-document' >> ~/.gemrc
 gem update --system
 
 # install default gems
-gem install byebug pry rails
+gem install byebug pry rails rubocop
 
 echo $'\nPlease restart your terminal!'
