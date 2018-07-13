@@ -18,8 +18,12 @@ if which apm; then
   linter-markdown linter-rubocop linter-tidy \
   markdown-writer sort-lines language-ember-htmlbars intentions linter-sass-lint \
   standardjs-snippets ruby-block open-in-browser 
+
+  # sets up correct rubocop path for atom rubocop-linter
+  echo "atom.config.set(\"linter-rubocop.command\", \"`rbenv which rubocop`\")" >> ~/.atom/init.coffee
+
   atom .
-  read -p "Please wait for Atom to open, and then close it with CMD+Q on macOS (or CTRL+Q on Linux) and press Enter to continue"
+  read -p "\n\nPlease wait for Atom to open, and then close it with CMD+Q on macOS (or CTRL+Q on Linux) and press Enter to continue\n"
 
   apm disable autocomplete-snippets
   # turn on autosave (manual check in package settings still part of installfest)
