@@ -7,17 +7,17 @@ else
   # install Atom for linux
   sudo add-apt-repository ppa:webupd8team/atom
   sudo apt update
-  sudo apt install atom 
+  sudo apt install atom
 fi
 
 # if apm exists (atom CLI tools installed) install these packages
 if which apm; then
   apm install aligner aligner-scss aligner-css aligner-javascript aligner-ruby atom-beautify \
   editorconfig linter-ui-default busy-signal esformatter fixmyjs git-diff-details git-history \
-  git-plus language-markdown less-than-slash linter linter-stylelint linter-eslint \
+  git-plus language-markdown less-than-slash linter linter-handlebars linter-stylelint linter-eslint \
   linter-markdown linter-rubocop linter-tidy \
   markdown-writer sort-lines language-ember-htmlbars intentions linter-sass-lint \
-  standardjs-snippets ruby-block open-in-browser 
+  standardjs-snippets ruby-block open-in-browser
 
   # sets up correct rubocop path for atom rubocop-linter
   echo "atom.config.set(\"linter-rubocop.command\", \"`rbenv which rubocop`\")" >> ~/.atom/init.coffee
