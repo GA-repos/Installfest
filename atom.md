@@ -48,11 +48,4 @@ Ensure the "Enabled" option is checked.
 
 ![Autosave Settings](https://cloud.githubusercontent.com/assets/388761/21697838/47338b72-d362-11e6-9106-4a5f476945ca.png)
 
-Lastly, in the top menu, go to `Packages -> Settings View -> Manage Packages`, and search for `linter-stylelint`.
-Then open the "Settings" panel for the linter-stylelint plugin.
-
-Ensure the `Use Standard` box is _checked._
-
-![Packages > Styelint > Settings](https://git.generalassemb.ly/storage/user/5688/files/acbce054-d42b-11e7-8097-14eb1f42141b)
-
 [Continue With Installfest](chrome.md)
