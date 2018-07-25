@@ -42,3 +42,6 @@ Temporary Items
 .nfs*
 
 # End of https://www.gitignore.io/api/macos,linux
+
+# VSCode settings
+.vscode
