@@ -5,15 +5,6 @@ see pull request
 
 Windows users will be using nano to save their commit messages. provide some instructions
 
-# Unix-CLI
-
-for `open` to work, you need *macOS*
-
-- On **Linux**, use `xdg-open` instead
-  - if you don’t already have it, use this to install: `sudo apt-get install xdg-open`
-- On **Windows 10**, use `wsl-open` instead
-  - if you don’t already have it, use this to install: `npm install wsl-open -g`
-
 # jquery-axax-*
 
 If you copy and paste data from a Windows application, it will inclue `CRLF` line
