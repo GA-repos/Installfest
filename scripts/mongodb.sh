@@ -25,7 +25,22 @@ else
     sudo apt-get install -y mongodb
     
     sudo service mongodb start 
-      
+
+    mkdir -p ~/.services
+
+    cat << 'EOF' > ~/.services/init
+sudo service mongodb start >/dev/null 2>&1 & 
+sudo service postgresql start >/dev/null 2>&1 & 
+EOF
+    
+    sudo chown -R root ~/.services
+
+    sudo chmod -R 755 ~/.services
+
+    echo "$(whoami)      ALL = (root) NOPASSWD: $HOME/.services/init" | sudo EDITOR='tee -a' visudo
+
+    echo "sudo ~/.services/init" >> ~/.bash_profile
+    
   else
 
     sudo apt install -y mongodb-org

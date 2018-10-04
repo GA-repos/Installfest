@@ -28,4 +28,3 @@ curl https://cli-assets.heroku.com/install.sh | sh
   sudo service mongodb start
   ```
 - this should not be an issue in the future as new WSL installs will have a more recent `apt` package lists
-- somehow add `mongdb` service to auto-start for bash
