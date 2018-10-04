@@ -10,6 +10,8 @@ if [[ $(uname -s) = 'Darwin' ]]; then
 
 else
 
+  sudo apt-get update
+
   sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
 
   echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
@@ -18,13 +20,13 @@ else
 
   if grep -q Microsoft /proc/version; then
 
+    sudo apt-get install mongodb-org
+
     sudo mkdir -p /data/db
 
     sudo chown `whoami` /data/db
-
-    sudo apt-get install -y mongodb
     
-    sudo service mongodb start 
+    sudo service mongodb start
 
     mkdir -p ~/.services
 
@@ -40,7 +42,7 @@ EOF
     echo "$(whoami)      ALL = (root) NOPASSWD: $HOME/.services/init" | sudo EDITOR='tee -a' visudo
 
     echo "sudo ~/.services/init" >> ~/.bash_profile
-    
+
   else
 
     sudo apt install -y mongodb-org
