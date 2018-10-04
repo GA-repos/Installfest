@@ -55,10 +55,22 @@ Ensure the `Use Standard` box is _checked._
 
 ![Packages > Styelint > Settings](https://git.generalassemb.ly/storage/user/5688/files/acbce054-d42b-11e7-8097-14eb1f42141b)
 
-#### Windows 10
+## Editing Files in Windows 10
 **It is VERY important that you only edit files in the Windows filesystem with Atom. Save all of your projects that you want to edit with Atom somewhere in `~/winhome`, **NEVER** in the WSL Ubuntu filesystem in `/`.**
 
+### Gotcha 1: Never Edit Ubuntu Files in Windows Apps
+
 The reason for this is that WSL Ubuntu can edit Windows files just fine, but editing WSL Ubuntu files with Windows programs (such as Atom which we just installed), corrupts them. Your instructors will provide more context for this!
+
+### Gotcha 2: Invisible Line Endings
+
+Windows has invisible line endings of type `CRLF` where Mac and Linux hav `LF` type line endings. If you copy text from a Windows program into Atom or bash, the `CRLF` endings may come along (even though they are invisible) and cause problems. Atom is set up to use `LF` line endings by default. 
+
+However, if any file you are working with is giving you errors when it is run that include things like "Illegal Character", you can run this command to convert a file from `CRLF` to `LF` line endings:
+
+```bash
+d2u <file to convert>
+```
 
 [Continue With Installfest](chrome.md)
 
