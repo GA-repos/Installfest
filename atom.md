@@ -28,6 +28,14 @@ scripts/atom.sh
 - **During this script, Atom will open for you. Follow the prompt in your terminal and close it when asked to.**
 - **on Windows 10** run the above command twice.
 
+### Fix Atom Settings
+
+There are a few fixes we need to apply to Atom in order for Ruby's linter `rubocop` to work, and for WSL users to have the proper line endings (LF) set as default for all files edited in Atom. Run the following:
+
+```bash
+scripts/atom.sh fix
+```
+
 ### Open Atom From Terminal
 
 We prefer to open Atom directly from the terminal from now on. Once finished, open up Atom from the terminal using the command:
