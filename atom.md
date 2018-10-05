@@ -17,22 +17,29 @@
 The text editor we'll be using in this course is called **Atom**; it was
 developed by the GitHub team, and is highly extensible.
 
-**Note: From this point forward you will open Atom from the command line** with `atom <path_of_file_or_dir_to_open>`
+### Installation
 
-
-### Atom Add-Ons
-
-We're going to use Atom's package manager, `apm`, to add a number of helpful
-extensions to your Atom installation.
-
-**During this script, Atom will open for you. Follow the prompt in your terminal and close it when asked to.**
+Run the following command to install Atom and several Atom packages:
 
 ```bash
 scripts/atom.sh
 ```
 
+- **During this script, Atom will open for you. Follow the prompt in your terminal and close it when asked to.**
+- **on Windows 10** run the above command twice.
+
+### Open Atom From Terminal
+
+We prefer to open Atom directly from the terminal from now on. Once finished, open up Atom from the terminal using the command:
+
+```bash
+atom .
+```
+
 If you get a `command not found` response in your terminal, you have not
-installed shell commands correctly. In the top menu, select `Atom -> Install Shell Commands`. Then, rerun the above script.
+installed shell commands correctly. In this case, open Atom by clicking the icon in Applications (MacOS), Stat Menu (Windows), etc. In the top menu, select `Atom -> Install Shell Commands`. Then, rerun the above command.
+
+### Enable Autosave
 
 Part of being a good developer is using tools that help you make fewer mistakes.
 To that end, let's configure a useful feature in Atom: autosave! The script you just ran should have enabled this for you, but we will check in Atom just to be sure.
@@ -45,6 +52,8 @@ Then open the "Settings" panel for the autosave plugin.
 ![Atom Settings > Packages](https://cloud.githubusercontent.com/assets/388761/21697829/41986714-d362-11e6-87ac-f0c42eac72e0.png)
 
 Ensure the "Enabled" option is checked.
+
+### Adjust Linting Settings
 
 ![Autosave Settings](https://cloud.githubusercontent.com/assets/388761/21697838/47338b72-d362-11e6-9106-4a5f476945ca.png)
 
