@@ -20,6 +20,8 @@ else
 
   if grep -q Microsoft /proc/version; then
 
+    sudo apt-get install mongodb
+    
     sudo apt-get install mongodb-org
 
     sudo mkdir -p /data/db
