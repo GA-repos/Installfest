@@ -34,6 +34,7 @@ fi
 # if Ubunutu Linux on WSL for Windows 10
 if grep -q Microsoft /proc/version; then
 
+    sudo apt-get update
     sudo apt-get install dos2unix
 
     # allow Windows apps to edit files without hogging the console std out
