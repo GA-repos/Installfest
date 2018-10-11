@@ -55,6 +55,39 @@ EOF
 
     # set rubocop path to batch file
     echo "atom.config.set(\"linter-rubocop.command\", \"%USERPROFILE%/.atom/rubocop.bat\")" >> ~/winhome/.atom/init.coffee
+
+    # FIX ATOM 1.13.x ISSUE THAT DOES NOT WORK WITH ALIAS PROVIDED IN `/scripts/bash.sh`
+
+    # get atom binary dir
+    atom_dir=$(echo "$(which atom)" | sed -e 's/\/atom$//')
+
+    # navigate up a directory and get the atom version folder name
+    cd $atom_dir
+    cd ..
+    atom_version=$(find . -maxdepth 1 -type d -name 'app-*' -printf '%P\n')
+
+    # add atom script to ~./.bashrc to handle opening atom
+    cat <<EOF >> ~/.bashrc
+function atom() {
+  if [ -z "\$1" ]; then
+    cmd.exe /c "%USERPROFILE%\\AppData\\Local\\atom\\$atom_version\\atom" > /dev/null 2>&1 &
+  else
+    full_bash_path=\$(realpath \$1)
+    win_path=\$(wslpath -w \$full_bash_path)
+    echo \$win_path
+    cmd.exe /c "%USERPROFILE%\\AppData\\Local\\atom\\$atom_version\\atom \$win_path" > /dev/null 2>&1 &
+  fi
+}
+EOF
+
+    # backup ~/.bashrc
+    cp ~/.bashrc ~/.bashrc.bak
+
+    # comment out previous atom alias
+    sed 's/"subl" \\/"subl")/g' ~/.bashrc.bak | sed 's/"atom")/# "atom")/g' > ~/.bashrc.tmp
+
+    # replace ~/.bashrc with fixed version
+    mv ~/.bashrc.tmp ~/.bashrc
   
   else
     # sets up correct rubocop path for atom rubocop-linter
