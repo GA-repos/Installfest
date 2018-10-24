@@ -88,6 +88,9 @@ EOF
 
     # replace ~/.bashrc with fixed version
     mv ~/.bashrc.tmp ~/.bashrc
+
+    # install Windows 10 html-tidy to use with linter-tidy
+    powershell.exe -command Start-Process powershell -Verb runAs -ArgumentList { choco install -y -f html-tidy }
   
   else
     # sets up correct rubocop path for atom rubocop-linter
