@@ -38,7 +38,8 @@ if grep -q Microsoft /proc/version; then
     sudo apt-get install dos2unix
 
     # allow Windows apps to edit files without hogging the console std out
-    # when run from WSL and add d2u to convert CRLF to LF line endings
+    # when run from WSL and add d2u to convert CRLF to LF line endings,
+    # also add say function for text-to-speech
     cat <<'EOF' >> ~/.bashrc
 
 # CONVERT A WINDOWS CRLF LINE ENDING FILE TO POSIX LF LINE ENDING FILE
@@ -64,6 +65,10 @@ do
         alias "$i"="cmd.exe /c $i $1"
     fi
 done
+
+say () {
+  cmd.exe /c PowerShell -Command "Add-Type -AssemblyName System.Speech; (New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak('$1');" > /dev/null 2&>1
+}
 
 EOF
 
