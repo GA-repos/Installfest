@@ -1,5 +1,7 @@
 # Installfest
-see pull request
+
+- Install Choclatey with or without Atom install being detected
+- see pull request
 
 # Git / GitHub
 
@@ -16,4 +18,3 @@ Windows users will be using nano to save their commit messages. provide some ins
 ```sh
 curl https://cli-assets.heroku.com/install.sh | sh
 ```
-
