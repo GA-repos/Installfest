@@ -38,13 +38,7 @@ Most of these
 errors are probably minor, but some might not be. Please wait until one of the
 consultants has given you the go-ahead before moving on.
 
--   After resolving errors, in your terminal, run:
-
-```bash
-brew doctor
-```
-
--   Once Homebrew says `Your system is ready to brew`, run the following command
+When you're ready to procede, run:
 
 ```bash
 scripts/homebrew.sh update
