@@ -1,5 +1,9 @@
 # Notes
 
+## Fork and Clone
+
+Be sure to show developers how to fork and clone on the projector.
+
 ## Common Problems
 
 Here is a list of common issues encountered during installfest
