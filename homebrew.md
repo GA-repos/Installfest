@@ -16,21 +16,18 @@
 
 [Homebrew](https://brew.sh/) is a package manager for macOS that makes installing software and useful tools easy.
 
-**If you are on a Linux-based OS, like Ubuntu, you won't need Homebrew.** Your
+If you are on a Linux-based OS, like Ubuntu, you won't use Homebrew, **but
+you must still run this script**. Your
 system includes a package manager that serves the same purpose. The script below
 will automatically detect if you're on Linux, and if you are, it won't install
 Homebrew. Instead, it will install a few tools that are needed on Linux for the
 rest of Installfest.
 
--  Enter the following command into your terminal.
+Enter the following command into your terminal.
 
-    ```bash
-    scripts/homebrew.sh
-    ```
-
--  If you're on OSX continue with the steps below. If you're using a Linux-based OS, scroll down and click "Continue With Installfest".
-
-## OSX only:
+```bash
+scripts/homebrew.sh
+```
 
 The last script may have displayed some errors. That's probably OK!
 
