@@ -23,8 +23,8 @@ Now that you are set up with GitHub Enterprise, we want this repo on your local
 computer. Please follow along as I show you how to fork, clone and put the repo
 in the correct directory.
 
--   We need to [fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
-    this repo ([installfest](https://git.generalassemb.ly/ga-wdi-boston/installfest)). Once you
+-   We need to fork and clone this repo. **An instructor will walk you through how
+    to do this**. Once you've
     fork to your Github Enterprise account, make sure you copy the HTTPS clone link (It will
     look something like `https://git.generalassemb.ly/<your github name>/installfest.git`)
 
