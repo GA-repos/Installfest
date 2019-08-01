@@ -8,7 +8,7 @@ If at any point you are unsure of whether you have done something correctly, ask
 
 #### Note for Linux Users
 We support both macOS and Ubuntu (an open-source Linux based OS) at WDI. If you choose
-to use Linux, we strongly recommend using Ubuntu 16.04. We can guide you through the
+to use Linux, we strongly recommend using the latest Ubuntu [LTS](https://ubuntu.com/about/release-cycle) (currently 18.04). We can guide you through the
 process of getting that set up on your machine. If you choose to use a different
 Linux distribution, or a different version of Ubuntu, the scripts in this repository
 will _not_ work, and you will be responsible for configuring your own development

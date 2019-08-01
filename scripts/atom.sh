@@ -5,9 +5,11 @@ if [[ $(uname -s) = 'Darwin' ]]; then
   brew cask install atom
 else
   # install Atom for linux
-  sudo add-apt-repository ppa:webupd8team/atom
-  sudo apt update
-  sudo apt install atom
+  # add package repo to system
+  wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+  sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+  sudo apt-get update
+  sudo apt-get install atom
 fi
 
 # if apm exists (atom CLI tools installed) install these packages
