@@ -32,7 +32,7 @@ the right of it.
 
 ### Ubuntu
 
-Run `sudo systemctl status mongod`. You should see a green circle and the words
+Run `sudo systemctl status mongodb`. You should see a green circle and the words
 "active (running)" somewhere in the output.
 
 ### On either OS
