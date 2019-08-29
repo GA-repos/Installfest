@@ -59,3 +59,11 @@ Some maintenance must be kept on this repository. For each cohort:
 2. Try to resolve and close (or at least have discussion about) open issues
 
 3. Make sure screenshot of Chrome settings is up to date [Chrome](chrome.md)
+
+## Version Reference
+
+Below are the current versions for the installed software:
+
+- nvm version 10.15.0
+- mongodb version 4.0
+- ruby version 2.6.3
