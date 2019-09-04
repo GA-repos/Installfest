@@ -19,7 +19,7 @@ if which apm; then
   git-plus language-markdown less-than-slash linter linter-eslint \
   linter-markdown linter-rubocop linter-tidy \
   markdown-writer sort-lines language-ember-htmlbars intentions linter-sass-lint \
-  standardjs-snippets ruby-block open-in-browser
+  standardjs-snippets ruby-block open-in-browser emmet pigments
   atom .
   read -p "\n\nPlease wait for Atom to open, and then close it with CMD+Q on macOS (or CTRL+Q on Linux) and press Enter to continue\n"
 
