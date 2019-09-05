@@ -28,9 +28,9 @@ EOF
   if [[ $1 = "node" ]]; then
     # source nvm for the environment of this script execution
     . "$(brew --prefix nvm)/nvm.sh"
-    # install version 8.9.1
+    # install version 10.15.0
     nvm install v10.15.0
-    # set version 8.9.1 as default node version
+    # set version 10.15.0 as default node version
     nvm alias default v10.15.0
   fi
 else
@@ -47,7 +47,7 @@ else
     source "$NVM_DIR/nvm.sh"
     # install node LTS
     nvm install v10.15.0
-    # set version 8.9.1 as default node version
+    # set version 10.15.0 as default node version
     nvm alias default v10.15.0
   fi
 fi

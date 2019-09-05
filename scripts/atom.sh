@@ -5,9 +5,11 @@ if [[ $(uname -s) = 'Darwin' ]]; then
   brew cask install atom
 else
   # install Atom for linux
-  sudo add-apt-repository ppa:webupd8team/atom
-  sudo apt update
-  sudo apt install atom
+  # add package repo to system
+  wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+  sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+  sudo apt-get update
+  sudo apt-get install atom
 fi
 
 # if apm exists (atom CLI tools installed) install these packages
@@ -17,7 +19,7 @@ if which apm; then
   git-plus language-markdown less-than-slash linter linter-eslint \
   linter-markdown linter-rubocop linter-tidy \
   markdown-writer sort-lines language-ember-htmlbars intentions linter-sass-lint \
-  standardjs-snippets ruby-block open-in-browser
+  standardjs-snippets ruby-block open-in-browser emmet pigments
   atom .
   read -p "\n\nPlease wait for Atom to open, and then close it with CMD+Q on macOS (or CTRL+Q on Linux) and press Enter to continue\n"
 

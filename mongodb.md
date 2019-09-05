@@ -15,7 +15,7 @@
 ## MongoDB
 
 We'll now install MongoDB, another open source database. To do that,
-type: 
+type:
 
 ```
 scripts/mongodb.sh
@@ -32,7 +32,7 @@ the right of it.
 
 ### Ubuntu
 
-Run `service mongod status`. You should see a green circle and the words
+Run `sudo systemctl status mongodb`. You should see a green circle and the words
 "active (running)" somewhere in the output.
 
 ### On either OS
@@ -41,9 +41,9 @@ If the service appears to be running, type `mongo` and hit enter.
 
 You should see something like this:
 ```
-MongoDB shell version v3.4.10
+MongoDB shell version v4.0.3
 connecting to: mongodb://127.0.0.1:27017
-MongoDB server version: 3.4.10
+MongoDB server version: 4.0.3
 ```
 possibly followed by some warnings/errors. Ignore these warnings/errors for now.
 You should notice that your command prompt is gone, replaced with a `>`.
