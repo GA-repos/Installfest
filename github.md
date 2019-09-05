@@ -16,7 +16,7 @@
 
 If you haven't done so already, go to [GitHub](http://www.github.com) and create
 an account; be sure to write down your username and password somewhere, since
-we'll be using these credentials later. Next, go to [GitHub Enterprise](https://git.generalassemb.ly) and create an account. It is recommended that you use the same username. This will be the source of your learning material throughout WDI, while your personal Github will be where you showcase your projects.
+we'll be using these credentials later. Next, go to [GitHub Enterprise](https://git.generalassemb.ly) and create an account. It is recommended that you use the same username. This will be the source of your learning material throughout SEI, while your personal Github will be where you showcase your projects.
 
 
 Now that you are set up with GitHub Enterprise, we want this repo on your local
