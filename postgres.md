@@ -14,7 +14,7 @@
 
 ## PostgreSQL
 
-We will be installing PostgreSQL, an open source relational database management system. In WDI, we will be writing SQL (structured query language) and maintaining our relational databases using Postgres.
+We will be installing PostgreSQL, an open source relational database management system. In SEI, we will be writing SQL (structured query language) and maintaining our relational databases using Postgres.
 
 Enter the following command in your terminal
 

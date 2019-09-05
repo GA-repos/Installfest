@@ -28,7 +28,7 @@ between them for different projects.
 scripts/nvm.sh
 ```
 
-**Restart your terminal (close it; not just the window! Then reopen it and `cd` back into `wdi/installfest`)**
+**Restart your terminal (close it; not just the window! Then reopen it and `cd` back into `sei/installfest`)**
   - On macOS, this can be done with the keyboard shortcut (&#8984; + Q)
   - On Linux this can be done with the keyboard shortcut (CTRL + D)
 
