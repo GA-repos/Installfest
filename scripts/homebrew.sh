@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+. ./scripts/parse_yaml.sh
+eval $(parse_yaml ./scripts/config.yml "config_")
+
 # if the script is run with 0 arguments
 if [[ $# -eq 0 ]] ; then
   # if operating system is macOS
@@ -23,7 +26,7 @@ if [[ $# -eq 0 ]] ; then
     cd /tmp
     git clone https://github.com/facebook/watchman.git
     cd watchman
-    git checkout v4.7.0
+    git checkout v$config_watchman_version
     sudo apt install -y autoconf automake build-essential python-dev libssl-dev libtool
     ./autogen.sh
     ./configure --enable-lenient

@@ -1,0 +1,9 @@
+ruby:
+  version: 2.6.3
+watchman:
+  version: 4.7.0
+nvm:
+  version: 10.15.0
+ubuntu:
+  version: 18.04
+
