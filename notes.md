@@ -46,11 +46,11 @@ the location of rbenv and nvm should come before `/usr/local/bin`
 Some maintenance must be kept on this repository. For each cohort:
 
 1. Make sure technology versions are consistent with what templates are using
-    - check `node` version in [nvm.sh](nvm.sh)
+    - check `node` version in [config.yml](config.yml)
       ```
       nvm install --lts=boron || nvm install <number_version_of_node>
       ```
-    - check `ruby` version in [ruby.sh](ruby.sh)
+    - check `ruby` version in [config.yml](config.yml)
       ```
       rbenv install <ruby_version>
       rbenv global <ruby_version>
@@ -62,8 +62,4 @@ Some maintenance must be kept on this repository. For each cohort:
 
 ## Version Reference
 
-Below are the current versions for the installed software:
-
-- nvm version 10.15.0
-- mongodb version 4.0
-- ruby version 2.6.3
+Check [scripts/config.yml](config.yml) for current versions, or run from root of this directory: `sh scripts/test_config.sh`
