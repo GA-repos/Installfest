@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+. ./scripts/parse_yaml.sh
+eval $(parse_yaml ./scripts/config.yml "config_")
+
 # if rvm is installed
 if which rvm; then
   # prompt for destructive action of removing rvm
@@ -66,10 +69,10 @@ else
   git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 fi
 
-# install Ruby version
-rbenv install 2.6.3
+# install Ruby version defined in config.yml
+rbenv install $config_ruby_version
 # set Ruby version used globally
-rbenv global 2.6.3
+rbenv global $config_ruby_version
 
 # disable documentation generation for gem installations
 echo 'gem: --no-document' >> ~/.gemrc
