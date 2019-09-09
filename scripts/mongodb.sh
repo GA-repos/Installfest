@@ -3,9 +3,14 @@
 set -e
 
 if [[ $(uname -s) = 'Darwin' ]]; then
-  brew install mongodb
+  brew tap mongodb/brew
+  
+  # check if mongodb installed, and uninstall if it exists
+  brew list mongodb && brew uninstall mongodb
 
-  brew services restart mongodb
+  brew install mongodb-community
+
+  brew services restart mongodb/brew/mongodb-community
 else
   sudo apt update
 
