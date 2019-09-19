@@ -2,7 +2,7 @@
 
 ## Fork and Clone
 
-Be sure to show developers how to fork and clone on the projector.
+Be sure to show developers how to fork and clone on the projector. Refer to [FAQ](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone) for visuals and walkthrough.
 
 ## Common Problems
 
