@@ -27,7 +27,7 @@ commands:
 
 ### macOS
 
-Run `brew services list`. You should see `mongodb` with the word "started" to
+Run `brew services list`. You should see `mongodb-community` with the word "started" to
 the right of it.
 
 ### Ubuntu
@@ -40,11 +40,13 @@ Run `sudo systemctl status mongodb`. You should see a green circle and the words
 If the service appears to be running, type `mongo` and hit enter.
 
 You should see something like this:
+
 ```
-MongoDB shell version v4.0.3
+MongoDB shell version v4.2.0
 connecting to: mongodb://127.0.0.1:27017
-MongoDB server version: 4.0.3
+MongoDB server version: 4.2.0
 ```
+
 possibly followed by some warnings/errors. Ignore these warnings/errors for now.
 You should notice that your command prompt is gone, replaced with a `>`.
 This means the MongoDB shell installed correctly. Press `Ctrl + c` to get back

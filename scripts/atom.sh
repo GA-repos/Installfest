@@ -17,8 +17,8 @@ if which apm; then
   apm install aligner aligner-scss aligner-css aligner-javascript aligner-ruby atom-beautify \
   editorconfig linter-ui-default busy-signal esformatter fixmyjs git-diff-details git-history \
   git-plus language-markdown less-than-slash linter linter-eslint \
-  linter-markdown linter-rubocop linter-tidy \
-  markdown-writer sort-lines language-ember-htmlbars intentions linter-sass-lint \
+  linter-markdown linter-rubocop linter-tidy tidy-html5 \
+  markdown-writer sort-lines intentions linter-sass-lint \
   standardjs-snippets ruby-block open-in-browser emmet pigments
   atom .
   read -p "\n\nPlease wait for Atom to open, and then close it with CMD+Q on macOS (or CTRL+Q on Linux) and press Enter to continue\n"

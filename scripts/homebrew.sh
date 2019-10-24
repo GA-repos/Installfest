@@ -21,26 +21,6 @@ if [[ $# -eq 0 ]] ; then
     sudo apt-get update
     sudo apt-get install -y curl
     sudo apt-get install -y tidy
-
-    # The following is all to install watchman
-    cd /tmp
-    git clone https://github.com/facebook/watchman.git
-    cd watchman
-    git checkout v$config_watchman_version
-    sudo apt install -y autoconf automake build-essential python-dev libssl-dev libtool
-    ./autogen.sh
-    ./configure --enable-lenient
-    make
-    sudo make install
-
-    # Raise `inotify` limit for watchman
-    echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_watches     && \
-        echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_queued_events  && \
-        echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_instances && \
-        watchman shutdown-server
-
-
-    echo $'\nAll set! Your'e on Linux, so you don\'t need to continue with homebrew.md. Click "Continue with Installfest".
   fi
 fi
 
@@ -52,7 +32,6 @@ if [[ $1 = "update" ]]; then
     brew update
     brew install tidy-html5
     brew install libsass
-    brew install watchman
   else
     echo $'\nYou\'re still all set! Please move on to the next step.\n'
   fi
