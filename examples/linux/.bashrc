@@ -16,7 +16,7 @@ export PATH="$HOME/.linuxbrew/bin:$PATH"
 export NVM_DIR=~/.nvm
 . $(brew --prefix nvm)/nvm.sh
 
-# from installfest/scripts/ruby.sh
+# from installfest/scripts/python.sh
 if which rbenv > /dev/null; then
    eval "$(rbenv init -)"
 fi

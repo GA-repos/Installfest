@@ -9,8 +9,8 @@ if [[ $# -eq 0 ]] ; then
     # change ownership of /usr/local and contents to current user
     # change group of directory and contents to admin
     sudo chown -R "$(whoami):admin" /usr/local
-    # use installed version of ruby to execute curl command to install homebrew
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    # use bash to execute curl command to install homebrew
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     # check for issues with the brew installation
     brew doctor
   else

@@ -23,7 +23,7 @@ Setup | Description
 [Command Line Tools - Xcode (macOS only)](command_line_tools.md) | Install Xcode
 [Homebrew](homebrew.md) | Install Homebrew package manager
 [Node](node.md) | Install nvm, Node, and global npm packages
-[Ruby](ruby.md) | Install rbenv and Ruby
+[Python](python.md) | Install rbenv and Python
 [PostgreSQL](postgres.md) | Install PostgreSQL
 [MongoDB](mongodb.md) | Install MongoDB
 [Atom](atom.md) | Install Atom and required plugins

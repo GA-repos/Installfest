@@ -6,7 +6,7 @@
 - [ ] **Command Line Tools - Xcode (macOS only)**
 - [ ] [Homebrew](homebrew.md)
 - [ ] [Node](node.md)
-- [ ] [Ruby](ruby.md)
+- [ ] [Python](python.md)
 - [ ] [PostgreSQL](postgres.md)
 - [ ] [MongoDB](mongodb.md)
 - [ ] [Atom](atom.md)

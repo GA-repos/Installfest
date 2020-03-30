@@ -6,7 +6,7 @@
 - [x] [Command Line Tools - Xcode (macOS only)](command_line_tools.md)
 - [x] [Homebrew](homebrew.md)
 - [ ] **Node**
-- [ ] [Ruby](ruby.md)
+- [ ] [Python](python.md)
 - [ ] [PostgreSQL](postgres.md)
 - [ ] [MongoDB](mongodb.md)
 - [ ] [Atom](atom.md)
@@ -51,4 +51,4 @@ modules and make them available across all of our projects.
 scripts/npm.sh
 ```
 
-[Continue With Installfest](ruby.md)
+[Continue With Installfest](python.md)
