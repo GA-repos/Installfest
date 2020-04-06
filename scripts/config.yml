@@ -1,5 +1,5 @@
-ruby:
-  version: 2.6.3
+python:
+  version: 3.7.7
 nvm:
   version: 10.15.0
 ubuntu:
