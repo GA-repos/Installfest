@@ -3,7 +3,7 @@
 if [[ $(uname -s) = 'Darwin' ]]; then
   # install postgres via homebrew
   brew install postgres
-  
+
   # start postgres
   brew services start postgres
 
@@ -25,6 +25,3 @@ fi
 
 # Resource bashrc
   source ~/.bashrc
-
-# install postgres gem for rails
-gem install pg
