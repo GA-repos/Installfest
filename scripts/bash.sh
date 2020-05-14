@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [[ $SHELL != '/bin/bash' ]]; then
-  echo "shell was $SHELL" 
+  echo "shell was $SHELL"
   echo 'changing shell to bash...'
   chsh -s /bin/bash "$(whoami)"
   printf '\nRESTART YOUR TERMINAL NOW to load the new bash shell\n'
@@ -31,5 +31,9 @@ if [[ $(uname -s) = 'Darwin' ]]; then
     read -p "Press [ENTER] to continue."
   fi
 else
+  # Increase Ubuntu watcher limit:
+  echo fs.inotify.max_user_watches=16384 | sudo tee -a /etc/sysctl.conf
+  echo sudo sysctl -p
+
   echo 'All set. Move on to the next section.'
 fi
