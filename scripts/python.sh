@@ -2,9 +2,10 @@
 
 # if operating system is NOT macOS
 if [[ $(uname -s) != 'Darwin' ]]; then
-  # install build dependency for rbenv
+  # install python and pip
   sudo apt-get update
-  sudo apt-get install -y python3.7 python3-pip pylint
+  sudo apt-get install -y python3.7 python3-pip
+  # install
   pip3 install pipenv pylint
   # print success
   echo 'python3 ––version'
