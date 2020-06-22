@@ -26,5 +26,4 @@ Setup | Description
 [Python](python.md) | Install rbenv and Python
 [PostgreSQL](postgres.md) | Install PostgreSQL
 [MongoDB](mongodb.md) | Install MongoDB
-[Atom](atom.md) | Install Atom and required plugins
 [Chrome](chrome.md) | Install Chrome and configure settings
