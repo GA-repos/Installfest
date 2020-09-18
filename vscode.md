@@ -33,7 +33,7 @@ If you do not already have Visual Studio Code, [download here](https://code.visu
 #### How do I know it worked?
 
 1. Open terminal.
-2. Type the command `code --help` into terminal. If see some help options, you successfully installed the `code` command.
+2. Type the command `code --help` into terminal. If you see some help options, you successfully installed the `code` command.
 
 ### Configure VS Code as your default Git commit/diff tool
 
@@ -50,6 +50,10 @@ In your terminal, run:
 ```
 code --install-extension ./ga-seir-bundle/ga-seir-bundle-0.0.1.vsix
 ```
+
+If your installations were a success, you will a message in terminal that looks like this:
+
+![successful extenion bundle install](https://i.imgur.com/0DP1j0W.png)
 
 ### Configure VS Code Settings
 
