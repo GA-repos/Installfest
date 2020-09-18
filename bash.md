@@ -9,8 +9,8 @@
 - [ ] [Python](python.md)
 - [ ] [PostgreSQL](postgres.md)
 - [ ] [MongoDB](mongodb.md)
-- [ ] [Atom](atom.md)
 - [ ] [Chrome](chrome.md)
+- [ ] [VS Code](vscode.md)
 
 ## Bash Configuration (macOS only)
 

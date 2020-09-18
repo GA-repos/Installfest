@@ -1,0 +1,21 @@
+{
+	"name": "ga-seir-bundle",
+	"displayName": "ga-seir-bundle",
+	"description": "VS Code Extensions for GA SEIR",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.49.0"
+	},
+	"publisher": "gaseir",
+	"categories": [
+		"Extension Packs"
+	],
+	"extensionPack": [
+		"ritwickdey.liveserver",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"coenraads.bracket-pair-colorizer",
+		"christian-kohler.path-intellisense",
+		"ms-python.python"
+	]
+}

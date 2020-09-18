@@ -11,6 +11,7 @@
 - [x] [MongoDB](mongodb.md)
 - [ ] **Atom**
 - [ ] [Chrome](chrome.md)
+- [ ] [VS Code](vscode.md)
 
 ## Atom
 

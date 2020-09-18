@@ -9,8 +9,8 @@
 - [x] [Python](python.md)
 - [x] [PostgreSQL](postgres.md)
 - [x] [MongoDB](mongodb.md)
-- [x] [Atom](atom.md)
 - [ ] **Chrome**
+- [ ] [VS Code](vscode.md)
 
 ## Chrome
 
