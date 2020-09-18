@@ -59,7 +59,7 @@ Code formatting done well makes your code easy to read and understand, and also 
 
 ![opening settings file](https://i.imgur.com/QNh6WkI.png)
 
-6. Once you have opened your `settings.json` file, copy and paste the following code into the top of your settings. Make sure you are pasting this code between the brackets.
+2. Once you have opened your `settings.json` file, copy and paste the following code into the top of your settings. Make sure you are pasting this code between the brackets.
 
 ```json
 {
@@ -92,7 +92,7 @@ Code formatting done well makes your code easy to read and understand, and also 
 
 > Note: if you find any of these settings don't work for you, feel free to modify them as you wish!
 
-7. Now your `settings.json` should look like this:
+3. Now your `settings.json` should look like this:
 
 ![settings.json file](https://i.imgur.com/3x5uNur.png)
 
