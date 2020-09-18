@@ -51,9 +51,11 @@ In your terminal, run:
 code --install-extension ./ga-seir-bundle/ga-seir-bundle-0.0.1.vsix
 ```
 
-If your installations were a success, you will a message in terminal that looks like this:
+If your installations were a success, you will see a message in terminal that looks like this:
 
 ![successful extenion bundle install](https://i.imgur.com/0DP1j0W.png)
+
+> Quit your instance of VS Code and reopen for the newly-installed extensions to take effect!
 
 ### Configure VS Code Settings
 
