@@ -17,8 +17,8 @@ function parse_git_branch {
   echo "("${ref#refs/heads/}")"
 }
 export PS1="\[$(tput bold)\]\w\[$(tput sgr0)\] \$(parse_git_branch)\n$ "
-export EDITOR='atom --wait'
-export VISUAL='atom --wait'
+export EDITOR='code --wait'
+export VISUAL='code --wait'
 
 EOF
 
@@ -40,7 +40,7 @@ git config --global pull.rebase true
 git config --global branch.autosetuprebase always
 git config --global push.default simple
 git config --global branch.autosetupmerge true
-git config --global core.editor "atom --wait"
+git config --global core.editor "code --wait"
 
 # set global gitignore file as ~/.gitignore
 git config --global core.excludesfile ~/.gitignore
