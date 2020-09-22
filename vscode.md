@@ -30,6 +30,19 @@ If you do not already have Visual Studio Code, [download here](https://code.visu
 - You might need to quit terminal _and_ VS Code (`cmd` + `q`) in order for this to take effect.
 - Make sure you are `quitting` terminal and VS Code, not just closing the program to install shell commands.
 
+
+#### ALTERNATIVE: Use the Command Line
+
+1. Open the terminal.
+1. Copy and paste the following lines into the terminal: 
+
+```bash
+cat << EOF >> ~/.bash_profile
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+EOF
+```
+
 #### How do I know it worked?
 
 1. Open terminal.
