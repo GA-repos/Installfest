@@ -7,8 +7,6 @@
 - [x] [Homebrew](homebrew.md)
 - [x] [Node](node.md)
 - [ ] **Python**
-- [ ] [PostgreSQL](postgres.md)
-- [ ] [MongoDB](mongodb.md)
 - [ ] [Chrome](chrome.md)
 - [ ] [VS Code](vscode.md)
 
@@ -26,4 +24,4 @@ scripts/python.sh
 
 Shut down your terminal and navigate back to the installfest repo before moving on.
 
-[Continue With Installfest](postgres.md)
+[Continue With Installfest](chrome.md)
