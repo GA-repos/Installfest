@@ -25,7 +25,5 @@ troubleshooting.
 | [Homebrew](homebrew.md)                                          | Install Homebrew package manager                                               |
 | [Node](node.md)                                                  | Install nvm, Node, and global npm packages                                     |
 | [Python](python.md)                                              | Install rbenv and Python                                                       |
-| [PostgreSQL](postgres.md)                                        | Install PostgreSQL                                                             |
-| [MongoDB](mongodb.md)                                            | Install MongoDB                                                                |
 | [Chrome](chrome.md)                                              | Install Chrome and configure settings                                          |
 | [VS Code](vscode.md)                                             | Install VS Code/extensions and configure settings                              |

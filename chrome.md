@@ -7,8 +7,6 @@
 - [x] [Homebrew](homebrew.md)
 - [x] [Node](node.md)
 - [x] [Python](python.md)
-- [x] [PostgreSQL](postgres.md)
-- [x] [MongoDB](mongodb.md)
 - [ ] **Chrome**
 - [ ] [VS Code](vscode.md)
 
