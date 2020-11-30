@@ -56,61 +56,17 @@ From the command line, run the following command from any directory: `git config
 
 VS Code has numerous extensions that make developers' lives easier! We will be installing a few essential ones right now:
 
-In your terminal, run:
-
 ```
-code --install-extension ./ga-seir-bundle/ga-seir-bundle-0.0.1.vsix
+"ritwickdey.liveserver",
+"dbaeumer.vscode-eslint",
+"esbenp.prettier-vscode",
+"coenraads.bracket-pair-colorizer",
+"christian-kohler.path-intellisense",
+"ms-python.python"
 ```
-
-If your installations were a success, you will see a message in terminal that looks like this:
-
-![successful extenion bundle install](https://i.imgur.com/0DP1j0W.png)
 
 > Quit your instance of VS Code and reopen for the newly-installed extensions to take effect!
 
-### Configure VS Code Settings
 
-Code formatting done well makes your code easy to read and understand, and also looks professional -- all things we want! Developing good habits early on to format as you write is important, but luckily VS Code has some great built-in tools to make formatting with your new extensions easier and more automatic.
 
-1.  **Open settings.json**: In the navigation menu, go to `View` -> `Command Palette`, or press `command` + `shift` + `p` to open your Command Palette. Type `Open Settings`, then select `Preferences: Open Settings (JSON)`. (Do not select the Default, Keyoboard, UI or Workspace options.)
 
-![opening settings file](https://i.imgur.com/QNh6WkI.png)
-
-2. Once you have opened your `settings.json` file, copy and paste the following code into the top of your settings. Make sure you are pasting this code between the brackets.
-
-```json
-{
-	"editor.formatOnSave": true,
-	"editor.formatOnPaste": true,
-	"editor.tabCompletion": "on",
-	"editor.wordWrap": "on",
-	"files.trimFinalNewlines": true,
-	"files.autoSave": "afterDelay",
-	"prettier.singleQuote": true,
-	"prettier.semi": true,
-	"prettier.jsxBracketSameLine": true,
-	"prettier.useTabs": true,
-	"prettier.tabWidth": 2,
-	"prettier.jsxSingleQuote": true,
-	"diffEditor.ignoreTrimWhitespace": true,
-	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true
-	},
-	"eslint.alwaysShowStatus": true,
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"python.linting.pylintEnabled": true,
-	"python.linting.enabled": true,
-	"python.formatting.provider": "autopep8"
-}
-```
-
-> Note: if you find any of these settings don't work for you, feel free to modify them as you wish!
-
-3. Now your `settings.json` should look like this:
-
-![settings.json file](https://i.imgur.com/3x5uNur.png)
-
-You will need to close VS Code completely and reopen it for changes to take effect. Now your text editor will AUTOMATICALLY format on save and paste!
